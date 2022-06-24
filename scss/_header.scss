@@ -1,0 +1,130 @@
+
+header { 
+    display: grid;
+    grid-template-areas: 
+    "encabezado navegador"
+    "enviar enviar";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    .encabezado {
+        grid-area: encabezado;
+        display: flex;
+        flex-direction: column;
+        .marca {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .logo-bekypequi {
+                margin:10px;
+                margin-bottom: 0px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: solid 2px rgb(72, 106, 179);
+                transition: all 0.5s ease; 
+                box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                &:hover {
+                    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                }
+            }
+            h1 {
+                font-weight: 300;
+                font-size:50px;     
+            }
+            .logo-spotify {
+                padding-top: 10px;
+                margin:10px;
+                margin-bottom: px;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+                &:hover {                
+                    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }    
+        .subtitulo {
+            margin-left: 4%;
+            h2 {
+                font-weight: 300;
+                font-size: 25px;
+                color: rgb(185, 174, 174);      
+            }
+        }       
+    }
+    .navegador {
+        grid-area: navegador;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin-top: 20px;
+                margin-right: 20px;          
+                a {
+                    color: rgb(185, 174, 174);
+                    font-weight: 300;
+                    border-radius: 60px;
+                    transition: all 0.3s ease;
+                    padding: 5px 10px;
+                    &:hover {
+                        padding: 7px 12px;
+                        background-color: aliceblue;
+                        color: black;
+                        box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+                        -webkit-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+                        -moz-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+                    }
+                }
+            }
+        }  
+    }
+    .enviar {
+        
+        grid-area: enviar;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        align-items: center;
+        border-bottom: 1px solid rgb(80, 79, 79);
+        padding-bottom: 3vh;
+        margin: 0% 5%;
+        a {
+            text-align: center;
+            padding: 1.5% 2%;
+            color: rgb(228, 217, 217);
+            font-size: 1.3rem;
+            background-color: #673ab7;
+            border-radius: 50px;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color: orangered;   
+            }  
+        }
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

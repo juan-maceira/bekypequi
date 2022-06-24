@@ -1,0 +1,974 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&family=Roboto:ital,wght@0,300;0,700;0,900;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(224, 224, 224);
+  list-style-type: none;
+  font-family: "Heebo", "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+main {
+  padding-top: 5vh;
+}
+
+header {
+  display: grid;
+  grid-template-areas: "encabezado navegador" "enviar enviar";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+header .encabezado {
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column;
+}
+header .encabezado .marca {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .encabezado .marca .logo-bekypequi {
+  margin: 10px;
+  margin-bottom: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 2px rgb(72, 106, 179);
+  transition: all 0.5s ease;
+  box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+}
+header .encabezado .marca .logo-bekypequi:hover {
+  box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+}
+header .encabezado .marca h1 {
+  font-weight: 300;
+  font-size: 50px;
+}
+header .encabezado .marca .logo-spotify {
+  padding-top: 10px;
+  margin: 10px;
+  margin-bottom: px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+header .encabezado .marca .logo-spotify:hover {
+  box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+}
+header .encabezado .marca .logo-spotify img {
+  width: 30px;
+  height: 30px;
+}
+header .encabezado .subtitulo {
+  margin-left: 4%;
+}
+header .encabezado .subtitulo h2 {
+  font-weight: 300;
+  font-size: 25px;
+  color: rgb(185, 174, 174);
+}
+header .navegador {
+  grid-area: navegador;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+header .navegador ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navegador ul li {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+header .navegador ul li a {
+  color: rgb(185, 174, 174);
+  font-weight: 300;
+  border-radius: 60px;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+header .navegador ul li a:hover {
+  padding: 7px 12px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+}
+header .enviar {
+  grid-area: enviar;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgb(80, 79, 79);
+  padding-bottom: 3vh;
+  margin: 0% 5%;
+}
+header .enviar a {
+  text-align: center;
+  padding: 1.5% 2%;
+  color: rgb(228, 217, 217);
+  font-size: 1.3rem;
+  background-color: #673ab7;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+header .enviar a:hover {
+  background-color: orangered;
+}
+
+footer {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .volver-arriba a {
+  transition: all 0.5s ease;
+}
+footer .redes-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .redes-footer a {
+  margin: 10px;
+}
+footer .redes-footer a .spotify-redes {
+  width: 32px;
+}
+footer .redes-footer a .insta-redes {
+  width: 34px;
+}
+footer .navegador-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+footer .navegador-footer span a {
+  color: rgb(224, 224, 224);
+  font-weight: 100;
+  font-size: 13px;
+  border-left: 1px solid rgb(224, 224, 224);
+  padding: 3px 15px;
+  transition: all 0.5s ease;
+}
+footer .navegador-footer span a:hover {
+  color: rgb(136, 250, 136);
+  border-left: 1px solid rgb(136, 250, 136);
+}
+
+.main-inicio {
+  display: flex;
+  flex-direction: column;
+}
+.main-inicio .texto-canciones {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  padding: 0% 10% 0% 5%;
+  text-align: left;
+}
+.main-inicio .texto-canciones h3 {
+  font-weight: 300;
+}
+.main-inicio .caja-canciones {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.main-inicio .caja-canciones iframe {
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+}
+
+.main-nosotros h2 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 5%;
+  margin-bottom: 0%;
+  color: rgb(224, 224, 224);
+}
+.main-nosotros .texto-nosotros {
+  margin: 2% 5%;
+  text-align: justify;
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  line-height: 40px;
+}
+.main-nosotros .texto-nosotros p {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.main-servicios {
+  display: grid;
+  grid-template-areas: "titulo-promocion texto-promocion" "imagen-promocion texto-promocion" "enviar-dos enviar-dos" "texto-curador titulo-curador" "texto-curador imagen-curador";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 30vh auto auto;
+}
+.main-servicios .titulo-promocion {
+  grid-area: titulo-promocion;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+  font-size: 75px;
+}
+.main-servicios .titulo-promocion h3 {
+  font-weight: 300;
+}
+.main-servicios .texto-promocion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1.3px;
+  line-height: 32px;
+  padding-left: 20px;
+  color: rgb(224, 224, 224);
+  grid-area: texto-promocion;
+}
+.main-servicios .texto-promocion p {
+  font-weight: 300;
+}
+.main-servicios .imagen-promocion {
+  grid-area: imagen-promocion;
+  display: flex;
+}
+.main-servicios .imagen-promocion img {
+  width: 100%;
+  height: auto;
+}
+.main-servicios .enviar-dos {
+  grid-area: enviar-dos;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-servicios .enviar-dos a {
+  padding: 2%;
+  color: white;
+  font-size: 1.3rem;
+  background-color: orangered;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.main-servicios .enviar-dos a:hover {
+  padding: 2.5%;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #673ab7;
+  box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+}
+.main-servicios .titulo-curador {
+  font-size: 75px;
+  grid-area: titulo-curador;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+  padding-right: 15%;
+}
+.main-servicios .titulo-curador h3 {
+  font-weight: 300;
+}
+.main-servicios .imagen-curador {
+  grid-area: imagen-curador;
+  display: flex;
+}
+.main-servicios .imagen-curador img {
+  width: 100%;
+  height: auto;
+}
+.main-servicios .texto-curador {
+  font-weight: 400;
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  line-height: 33px;
+  padding-right: 20px;
+  color: rgb(224, 224, 224);
+  grid-area: texto-curador;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main-servicios .texto-curador p {
+  font-weight: 300;
+}
+
+.main-playlist h2 {
+  font-size: 70px;
+  font-weight: 300;
+  padding: 1% 3% 0.3% 3%;
+}
+.main-playlist p {
+  font-weight: 300;
+  font-size: 25px;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  color: rgb(185, 174, 174);
+}
+.main-playlist .indice-playlist {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.main-playlist .indice-playlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-playlist .indice-playlist ul li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.main-playlist .indice-playlist ul li a {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  border-radius: 50px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
+}
+.main-playlist .indice-playlist ul li a:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.pages-playlists .titulo-playlists {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+.pages-playlists .titulo-playlists h3 {
+  margin-left: 1%;
+  font-weight: 300;
+  font-size: 60px;
+}
+.pages-playlists .titulo-playlists .segui {
+  display: flex;
+}
+.pages-playlists .titulo-playlists .segui p {
+  font-weight: 300;
+  margin-left: 10px;
+  color: rgb(134, 247, 134);
+}
+.pages-playlists .titulo-playlists .segui a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+}
+.pages-playlists .titulo-playlists .segui a img {
+  width: 16px;
+  height: 16px;
+}
+.pages-playlists .caja-playlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3%;
+}
+.pages-playlists .caja-playlist iframe {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+.pages-playlists .caja-playlist .indice-playlist2 {
+  margin-left: 1%;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5% 2.5%;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 50px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.main-contacto h2 {
+  font-size: 40Px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*############ DESKTOP 993 / 1245 ###############*/
+@media (min-width: 993px) and (max-width: 1245px) {
+  .navegador ul li {
+    margin: 3%;
+  }
+  .main-nosotros h2 {
+    text-align: left;
+    font-size: 80px;
+    font-weight: 400;
+  }
+  .main-nosotros .texto-nosotros {
+    margin-top: 30px;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    line-height: 40px;
+  }
+  .main-servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 30vh auto auto;
+    margin: 5% 5%;
+  }
+  .main-servicios .titulo-promocion {
+    font-size: 65px;
+    line-height: 90px;
+  }
+  .main-servicios .texto-promocion {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+  .main-servicios .enviar-dos {
+    grid-area: enviar-dos;
+    background-color: #633ea3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-servicios .enviar-dos a {
+    padding: 3%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: orangered;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  .main-servicios .enviar-dos a:hover {
+    padding: 4%;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #673ab7;
+    box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
+  }
+  .main-servicios .titulo-curador {
+    font-size: 60px;
+    line-height: 90px;
+  }
+  .main-servicios .texto-curador {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 28px;
+  }
+}
+/*############# TABLET 768 / 1023  ##################*/
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 50vh auto 25vh;
+  }
+  body .enviar {
+    justify-content: left;
+    padding-left: 2%;
+  }
+  body .enviar a {
+    padding: 3%;
+    font-size: 1.2rem;
+  }
+  body .enviar a:hover {
+    padding: 3.5%;
+    font-size: 1.3rem;
+  }
+  body .main-inicio .caja-canciones {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  body .main-inicio .texto-canciones {
+    font-size: 50px;
+  }
+  body .main-nosotros h2 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  body .main-nosotros .texto-nosotros {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+  }
+  body .main-servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 25vh auto auto;
+    margin: 5% 5%;
+  }
+  body .main-servicios .titulo-promocion {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  body .main-servicios .texto-promocion {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  body .main-servicios .enviar-dos {
+    grid-area: enviar-dos;
+    background-color: #633ea3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-servicios .enviar-dos a {
+    padding: 3%;
+    color: white;
+    font-size: 1.3rem;
+  }
+  body .main-servicios .enviar-dos a:hover {
+    padding: 4%;
+    font-size: 1.4rem;
+  }
+  body .main-servicios .titulo-curador {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  body .main-servicios .texto-curador {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 21px;
+  }
+  body .main-contacto h2 {
+    font-size: 30px;
+  }
+  body .indice-playlist ul {
+    grid-template-columns: repeat(3, 20%);
+  }
+  body .indice-playlist ul li {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  body .indice-playlist ul li a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 3% 6%;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+  }
+  body .indice-playlist ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+    padding: 4% 7%;
+  }
+}
+/*####################### TABLET 481 / 767 #######################*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 50vh auto 25vh;
+  }
+  body .navegador ul li {
+    margin: 2%;
+  }
+  body .navegador ul li a {
+    font-size: 1rem;
+  }
+  body .navegador ul li a:hover {
+    padding: 5px;
+  }
+  body h1 {
+    font-size: 40px;
+  }
+  body h2 {
+    font-size: 25px;
+  }
+  body .main-inicio .caja-canciones {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+  body .main-inicio .caja-canciones iframe {
+    width: 100%;
+    height: 80px;
+  }
+  body .main-inicio .texto-canciones {
+    font-size: 38px;
+    margin-left: 20px;
+  }
+  body .main-nosotros h2 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  body .main-nosotros .texto-nosotros {
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    line-height: 25px;
+  }
+  body .main-nosotros .texto-nosotros p {
+    margin-bottom: 10px;
+  }
+  body .main-servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 25vh auto auto;
+    margin: 5% 5%;
+  }
+  body .main-servicios .titulo-promocion {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  body .main-servicios .texto-promocion {
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+  }
+  body .main-servicios .enviar-dos {
+    grid-area: enviar-dos;
+    background-color: #633ea3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-servicios .enviar-dos a {
+    padding: 3%;
+    color: white;
+    font-size: 1.3rem;
+  }
+  body .main-servicios .enviar-dos a:hover {
+    padding: 4%;
+    font-size: 1.4rem;
+  }
+  body .main-servicios .titulo-curador {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  body .main-servicios .texto-curador {
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+  }
+  body .main-playlist {
+    background-size: 100%;
+  }
+  body .main-playlist h2 {
+    font-size: 25Px;
+  }
+  body .main-playlist .indice-playlist ul {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  body .main-playlist .indice-playlist ul li {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  body .main-playlist .indice-playlist ul li a {
+    font-size: 1.1rem;
+  }
+  body .main-playlist .contenedor-playlist .caja-playlist h3 a {
+    font-size: 20px;
+  }
+  body .main-contacto h2 {
+    font-size: 25px;
+  }
+  body footer .volver-arriba a {
+    font-size: 13px;
+  }
+  body footer .navegador-footer span a {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body footer .navegador-footer span a:hover {
+    padding: 11px;
+  }
+}
+/*############## SMARTPHONE 480 ####################*/
+@media (max-width: 480px) {
+  body {
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 45vh auto 25vh;
+  }
+  body .enviar {
+    padding-right: 4%;
+  }
+  body .enviar a {
+    padding: 4%;
+    font-size: 1rem;
+  }
+  body .enviar a:hover {
+    padding: 5%;
+    font-size: 1.1rem;
+  }
+  body h1 {
+    font-size: 35px;
+  }
+  body h2 {
+    font-size: 20px;
+  }
+  body .logo-bekypequi {
+    width: 100PX;
+    height: 100PX;
+  }
+  body .logo-bekypequi:hover {
+    width: 105px;
+    height: 105px;
+  }
+  body .subtitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body .main-inicio .caja-canciones {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+  body .main-inicio .caja-canciones iframe {
+    width: 100%;
+    height: 80px;
+  }
+  body .main-inicio .texto-canciones {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  body .main-nosotros {
+    margin: 5% 10%;
+  }
+  body .main-nosotros h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  body .main-nosotros .texto-nosotros {
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    line-height: 25px;
+  }
+  body .main-nosotros .texto-nosotros p {
+    margin-bottom: 10px;
+  }
+  body .main-servicios {
+    grid-template-areas: "titulo-promocion titulo-promocion" "texto-promocion texto-promocion" "imagen-promocion imagen-promocion" "enviar-dos enviar-dos" "titulo-curador titulo-curador" "texto-curador texto-curador" "imagen-curador imagen-curador";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 20vh auto auto;
+    margin: 5% 5%;
+  }
+  body .main-servicios .titulo-promocion {
+    font-size: 35px;
+    line-height: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .main-servicios .texto-promocion {
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    padding: 5px 20px;
+  }
+  body .main-servicios .imagen-promocion {
+    grid-area: imagen-promocion;
+    display: none;
+  }
+  body .main-servicios .enviar-dos {
+    grid-area: enviar-dos;
+    background-color: #633ea3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-servicios .enviar-dos a {
+    padding: 3%;
+    color: white;
+    font-size: 1rem;
+  }
+  body .main-servicios .enviar-dos a:hover {
+    padding: 4%;
+    font-size: 1.2rem;
+  }
+  body .main-servicios .titulo-curador {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  body .main-servicios .texto-curador {
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    padding: 5px 20px;
+  }
+  body .main-servicios .imagen-curador {
+    grid-area: imagen-curador;
+    display: none;
+  }
+  body .main-playlist {
+    background-image: linear-gradient(#633ea3, #633ea3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-attachment: fixed;
+    margin-bottom: 7%;
+    margin-top: 10px;
+  }
+  body .main-playlist h2 {
+    font-size: 25Px;
+    padding-top: 10px;
+  }
+  body .main-playlist .indice-playlist ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  body .main-playlist .indice-playlist ul li {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  body .main-playlist .indice-playlist ul li a {
+    font-size: 1rem;
+  }
+  body .main-playlist .contenedor-playlist .caja-playlist {
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+  body .main-playlist .contenedor-playlist .caja-playlist h3 a {
+    margin-top: 3%;
+    font-size: 15px;
+  }
+  body .main-contacto h2 {
+    font-size: 25Px;
+  }
+  body footer {
+    background-image: linear-gradient(to top, #633ea3, #633ea3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "volver" "menu" "redes";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    grid-row-gap: 20px;
+  }
+  body footer .volver-arriba {
+    display: flex;
+    justify-content: center;
+    grid-area: volver;
+  }
+  body footer .volver-arriba a {
+    font-size: 13px;
+  }
+  body footer .redes-footer {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  body footer .redes-footer a {
+    margin: 10px;
+  }
+  body footer .navegador-footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: menu;
+  }
+  body footer .navegador-footer span a {
+    color: white;
+    font-weight: 100;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 0px solid white;
+  }
+  body footer .navegador-footer span a:hover {
+    color: orangered;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
