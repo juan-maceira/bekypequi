@@ -1,19 +1,20 @@
 .main-nosotros {
+    margin: 3% 0%;
     h2 {
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 300;
-        margin: 5%;
-        margin-bottom: 0%;
+        margin-bottom: 2%;
         color: rgb(224, 224, 224);
+        padding-left: 3%;
     } 
     .texto-nosotros {
-        margin: 2% 5%;
-        text-align: justify;
-        font-size: 25px;
+        text-align: left;
+        font-size: 23px;
         letter-spacing:1.3px; 
         line-height: 40px;
         p {
-            margin-bottom: 20px;
+            padding-left: 3%;
+            padding-right: 10%;
             font-weight: 300;
         }
     }

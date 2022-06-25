@@ -1,5 +1,4 @@
 footer {
-    
     height: 170px; 
     display: flex;
     flex-direction: column;
@@ -8,19 +7,13 @@ footer {
     justify-content: space-evenly;      
     padding-top: 10px;
     padding-bottom: 10px;
-    .volver-arriba a {
-        transition: all 0.5s ease;       
-    }
     .redes-footer {
         display: flex;
         justify-content: space-evenly;
         a {
-            margin: 10px;
-            .spotify-redes {
-                width: 32px;
-            }
-            .insta-redes {
-                width: 34px;
+            img {
+                width: 24px;
+                margin: 0px 5px;
             }
         }
     }
@@ -29,18 +22,20 @@ footer {
         flex-wrap: nowrap;
         justify-content:center;
         margin-top: 5px;
-        span a {
-            color: rgb(224, 224, 224);
-            font-weight: 100;
-            font-size: 13px;
-            border-left: 1px solid rgb(224, 224, 224);
-            padding: 3px 15px; 
-            transition: all 0.5s ease;
-            &:hover {
-                color: rgb(136, 250, 136);
-                border-left: 1px solid rgb(136, 250, 136);
-            } 
-        }  
+        span {
+            a {
+                color: rgb(224, 224, 224);
+                font-weight: 100;
+                font-size: 15px;
+                border-left: 1px solid rgb(224, 224, 224);
+                padding: 3px 15px; 
+                transition: all 0.5s ease;
+                &:hover {
+                    color: rgb(136, 250, 136);
+                    border-left: 1px solid rgb(136, 250, 136);
+                }
+            }
+        }
     }
 }
 

@@ -1,57 +1,52 @@
 .main-servicios {
-    display: grid;
-    grid-template-areas: 
-    "titulo-promocion texto-promocion"
-    "imagen-promocion texto-promocion"
-    "enviar-dos enviar-dos"
-    "texto-curador titulo-curador"
-    "texto-curador imagen-curador";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 30vh auto auto;
-    
-    .titulo-promocion {
-        grid-area: titulo-promocion;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0%;
+    .encabezado-promocion {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-bottom: 3%;
-        font-size: 75px;
-        h3 {
-            font-weight: 300;
-        }       
-    }
-    .texto-promocion {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        font-weight: 400;
-        font-size: 21px;
-        text-align: justify;
-        letter-spacing:1.3px; 
-        line-height: 32px;
-        padding-left: 20px;
-        color: rgb(224, 224, 224);
-        grid-area: texto-promocion;
-        p {
-            font-weight: 300;
-        }    
-    }
-    .imagen-promocion {
-        grid-area: imagen-promocion;
-        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .titulo-promocion {
+            font-size:50px;
+            margin-bottom: 2%;
+            h3 {
+                font-weight: 300;
+                padding-left: 3%;
+            }       
+        }
         img {
-            width: 100%;
-            height: auto;    
+            width: 30%;
+            height: auto;
+            border-radius: 5px;
+            padding-right: 5%;
         }
     }
+    .texto-promocion {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;       
+        font-weight: 400;
+        font-size: 23px;
+        text-align: left;
+        letter-spacing:1.3px; 
+        line-height: 32px;       
+        p {
+            font-weight: 300;
+            color: rgb(185, 174, 174);
+            padding-left: 2%;
+            padding-right: 8%;
+        }    
+    }
     .enviar-dos {
-        grid-area: enviar-dos;
+        margin: 0% 2%;
         display: flex;
         flex-wrap: nowrap;
         justify-content:center;
         align-items: center;
+        border-bottom: 1px solid rgb(80, 79, 79);
         a {
+            margin: 4%;
             padding: 2%;
             color: white;
             font-size: 1.3rem;
@@ -59,50 +54,48 @@
             border-radius: 5px;
             transition: all 0.3s ease;
             &:hover {
-                padding: 2.5%;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 color: white;
-                background-color: #673ab7;
-                box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
-                -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
-                -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+                background-color: #673ab7; 
             } 
         }
     }
-    .titulo-curador {
-        font-size: 75px;
-        grid-area: titulo-curador;
+    .encabezado-curador {
+        margin-top: 3%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-bottom: 3%;
-        padding-right: 15%;
-        h3 {
-            font-weight: 300;
-        }      
-    }
-    .imagen-curador {
-        grid-area: imagen-curador;
-        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .titulo-curador {
+            font-size: 50px;
+            margin: 2% 0% 3% 0%;
+            h3 {
+                font-weight: 300;
+                padding-left: 3%;
+            }      
+        }
         img {
-            width: 100%;
+            width: 30%;
             height: auto;
+            border-radius: 2px;
+            padding-right: 5%;
         }
     }
     .texto-curador {
+        margin-top: 30px;
         font-weight: 400;
-        font-size: 21px;
-        text-align: justify;
+        font-size: 23px;
+        text-align: left;
         letter-spacing:1.5px; 
         line-height: 33px;
-        padding-right: 20px;
         color: rgb(224, 224, 224);
-        grid-area: texto-curador;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: start;
         p {
             font-weight: 300;
+            color: rgb(185, 174, 174);
+            padding-left: 2%;
+            padding-right: 8%;
         }
     }       
 }
