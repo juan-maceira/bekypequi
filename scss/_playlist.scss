@@ -34,11 +34,11 @@
                 display: flex;
                 justify-content: space-evenly;
                 margin: 2%;
-                a {
+                .boton-verde {
                     color: white;
                     font-size: 28px;
                     font-weight: 400;
-                    border-radius: 50px;
+                    border-radius: 60px;
                     padding: 5px 15px; 
                     border-style: solid;
                     border-width: 1Px;
@@ -102,12 +102,13 @@
             ul {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-evenly;
                 li { 
                     display: flex;
                     justify-content: space-evenly;
                     margin: 1.5% 2.5%;
                     a {
-                        color: white;
+                        color: white;                       
                         font-size: 20px;
                         font-weight: 400;
                         border-radius: 50px;
@@ -118,8 +119,7 @@
                         &:hover {
                             background-color: rgb(23, 139, 23);
                             border-color: white; 
-                            text-shadow: 3px 3px 3px black;
-                        
+                            text-shadow: 3px 3px 3px black;                       
                         }          
                     }
                 }

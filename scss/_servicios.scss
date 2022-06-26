@@ -11,11 +11,12 @@
             margin-bottom: 2%;
             h3 {
                 font-weight: 300;
-                padding-left: 3%;
+                padding-left: 4%;
+                margin: 2% 2% 3% 0%;
             }       
         }
         img {
-            width: 30%;
+            width: 40%;
             height: auto;
             border-radius: 5px;
             padding-right: 5%;
@@ -28,13 +29,11 @@
         justify-content: space-between;       
         font-weight: 400;
         font-size: 23px;
-        text-align: left;
-        letter-spacing:1.3px; 
-        line-height: 32px;       
+        text-align: left;      
         p {
             font-weight: 300;
             color: rgb(185, 174, 174);
-            padding-left: 2%;
+            padding-left: 3%;
             padding-right: 8%;
         }    
     }
@@ -67,14 +66,14 @@
         align-items: center;
         .titulo-curador {
             font-size: 50px;
-            margin: 2% 0% 3% 0%;
+            margin: 2% 2% 3% 0%;
             h3 {
                 font-weight: 300;
-                padding-left: 3%;
+                padding-left: 4%;
             }      
         }
         img {
-            width: 30%;
+            width: 40%;
             height: auto;
             border-radius: 2px;
             padding-right: 5%;
@@ -85,8 +84,6 @@
         font-weight: 400;
         font-size: 23px;
         text-align: left;
-        letter-spacing:1.5px; 
-        line-height: 33px;
         color: rgb(224, 224, 224);
         display: flex;
         flex-direction: column;
@@ -94,7 +91,7 @@
         p {
             font-weight: 300;
             color: rgb(185, 174, 174);
-            padding-left: 2%;
+            padding-left: 3%;
             padding-right: 8%;
         }
     }       

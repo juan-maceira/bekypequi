@@ -73,7 +73,7 @@ header .navegador ul li {
   margin-right: 20px;
 }
 header .navegador ul li a {
-  color: rgb(185, 174, 174);
+  color: rgb(212, 202, 202);
   font-weight: 300;
   border-radius: 60px;
   transition: all 0.5s ease;
@@ -101,7 +101,7 @@ header .enviar a {
   color: rgb(228, 217, 217);
   font-size: 1.3rem;
   background-color: #673ab7;
-  border-radius: 50px;
+  border-radius: 60px;
   transition: all 0.5s ease;
 }
 header .enviar a:hover {
@@ -109,12 +109,12 @@ header .enviar a:hover {
 }
 
 footer {
-  height: 170px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -131,6 +131,7 @@ footer .navegador-footer {
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 footer .navegador-footer span a {
   color: rgb(224, 224, 224);
@@ -191,8 +192,6 @@ footer .navegador-footer span a:hover {
 .main-nosotros .texto-nosotros {
   text-align: left;
   font-size: 23px;
-  letter-spacing: 1.3px;
-  line-height: 40px;
 }
 .main-nosotros .texto-nosotros p {
   padding-left: 3%;
@@ -216,10 +215,11 @@ footer .navegador-footer span a:hover {
 }
 .main-servicios .encabezado-promocion .titulo-promocion h3 {
   font-weight: 300;
-  padding-left: 3%;
+  padding-left: 4%;
+  margin: 2% 2% 3% 0%;
 }
 .main-servicios .encabezado-promocion img {
-  width: 30%;
+  width: 40%;
   height: auto;
   border-radius: 5px;
   padding-right: 5%;
@@ -232,13 +232,11 @@ footer .navegador-footer span a:hover {
   font-weight: 400;
   font-size: 23px;
   text-align: left;
-  letter-spacing: 1.3px;
-  line-height: 32px;
 }
 .main-servicios .texto-promocion p {
   font-weight: 300;
   color: rgb(185, 174, 174);
-  padding-left: 2%;
+  padding-left: 3%;
   padding-right: 8%;
 }
 .main-servicios .enviar-dos {
@@ -271,14 +269,14 @@ footer .navegador-footer span a:hover {
 }
 .main-servicios .encabezado-curador .titulo-curador {
   font-size: 50px;
-  margin: 2% 0% 3% 0%;
+  margin: 2% 2% 3% 0%;
 }
 .main-servicios .encabezado-curador .titulo-curador h3 {
   font-weight: 300;
-  padding-left: 3%;
+  padding-left: 4%;
 }
 .main-servicios .encabezado-curador img {
-  width: 30%;
+  width: 40%;
   height: auto;
   border-radius: 2px;
   padding-right: 5%;
@@ -288,8 +286,6 @@ footer .navegador-footer span a:hover {
   font-weight: 400;
   font-size: 23px;
   text-align: left;
-  letter-spacing: 1.5px;
-  line-height: 33px;
   color: rgb(224, 224, 224);
   display: flex;
   flex-direction: column;
@@ -298,7 +294,7 @@ footer .navegador-footer span a:hover {
 .main-servicios .texto-curador p {
   font-weight: 300;
   color: rgb(185, 174, 174);
-  padding-left: 2%;
+  padding-left: 3%;
   padding-right: 8%;
 }
 
@@ -337,17 +333,17 @@ footer .navegador-footer span a:hover {
   justify-content: space-evenly;
   margin: 2%;
 }
-.main-playlist .indice-playlist ul li a {
+.main-playlist .indice-playlist ul li .boton-verde {
   color: white;
   font-size: 28px;
   font-weight: 400;
-  border-radius: 50px;
+  border-radius: 60px;
   padding: 5px 15px;
   border-style: solid;
   border-width: 1Px;
   transition: all 0.5s ease;
 }
-.main-playlist .indice-playlist ul li a:hover {
+.main-playlist .indice-playlist ul li .boton-verde:hover {
   background-color: rgb(23, 139, 23);
   border-color: white;
   text-shadow: 3px 3px 3px black;
@@ -400,6 +396,7 @@ footer .navegador-footer span a:hover {
 .pages-playlists .caja-playlist .indice-playlist2 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .pages-playlists .caja-playlist .indice-playlist2 ul li {
   display: flex;
@@ -488,8 +485,6 @@ footer .navegador-footer span a:hover {
   .main-servicios .texto-promocion {
     font-size: 20px;
     text-align: left;
-    letter-spacing: 1.3px;
-    line-height: 27px;
   }
   .main-servicios .encabezado-curador .titulo-curador {
     font-size: 45px;
@@ -498,8 +493,6 @@ footer .navegador-footer span a:hover {
   .main-servicios .texto-curador {
     margin-top: 20px;
     font-size: 20px;
-    letter-spacing: 1.3px;
-    line-height: 27px;
   }
   .main-playlist h2 {
     font-size: 50px;
@@ -620,8 +613,6 @@ footer .navegador-footer span a:hover {
   .main-servicios .texto-promocion {
     font-size: 17px;
     text-align: left;
-    letter-spacing: 1.3px;
-    line-height: 23px;
   }
   .main-servicios .encabezado-curador .titulo-curador {
     font-size: 35px;
@@ -630,8 +621,6 @@ footer .navegador-footer span a:hover {
   .main-servicios .texto-curador {
     margin-top: 20px;
     font-size: 17px;
-    letter-spacing: 1.3px;
-    line-height: 23px;
   }
   .main-contacto h2 {
     font-size: 30px;
@@ -692,7 +681,7 @@ footer .navegador-footer span a:hover {
 /*####################### TABLET 481 / 767 #######################*/
 @media (min-width: 481px) and (max-width: 767px) {
   header {
-    grid-template-areas: "encabezado" "navegador" "enviar";
+    grid-template-areas: "navegador" "encabezado" "enviar";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
@@ -702,17 +691,16 @@ footer .navegador-footer span a:hover {
     justify-content: space-evenly;
   }
   header .encabezado .marca .logo-bekypequi {
-    margin-right: 8px;
+    margin: 8px 5px 0px 0px;
     width: 40px;
     height: 40px;
   }
   header .encabezado .marca h1 {
-    font-size: 25px;
+    font-size: 27px;
   }
   header .encabezado .marca .logo-spotify {
-    padding-top: 13px;
-    margin: 5px;
-    margin-bottom: 0px;
+    padding-top: 16px;
+    margin: 4px;
     border-radius: 50%;
   }
   header .encabezado .marca .logo-spotify img {
@@ -721,27 +709,28 @@ footer .navegador-footer span a:hover {
   }
   header .encabezado .subtitulo {
     margin-left: 0%;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
   header .encabezado .subtitulo h2 {
-    font-size: 15px;
+    font-size: 23px;
   }
   header .navegador {
+    background-color: rgb(26, 26, 46);
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   header .navegador ul {
     justify-content: center;
     align-items: center;
   }
   header .navegador ul li {
-    margin: 10px;
+    margin: 10px 5px;
   }
   header .navegador ul li a {
-    background-color: aliceblue;
-    color: black;
     padding: 3px 6px;
-    font-size: 12px;
+    font-size: 18px;
   }
   header .navegador ul li a:hover {
     padding: 4px 8px;
@@ -752,7 +741,9 @@ footer .navegador-footer span a:hover {
     padding-bottom: 10px;
   }
   header .enviar a {
-    font-size: 0.9rem;
+    border-radius: 2px;
+    background-color: rgb(248, 104, 52);
+    font-size: 1.5rem;
   }
   .main-inicio .caja-canciones {
     grid-template-columns: repeat(1, 1fr);
@@ -765,44 +756,60 @@ footer .navegador-footer span a:hover {
     font-size: 38px;
     margin-left: 20px;
   }
+  .main-nosotros {
+    margin: 4% 0%;
+  }
   .main-nosotros h2 {
-    font-size: 30px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 40px;
   }
   .main-nosotros .texto-nosotros {
-    font-size: 15px;
-    letter-spacing: 1.3px;
-    line-height: 22px;
+    font-size: 18px;
   }
   .main-nosotros .texto-nosotros p {
-    padding-right: 5%;
+    padding-right: 4%;
   }
   .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 2%;
   }
+  .main-servicios .encabezado-promocion img {
+    width: 45%;
+  }
   .main-servicios .texto-promocion {
-    font-size: 13px;
+    margin-top: 15px;
+    font-size: 18px;
     text-align: left;
-    letter-spacing: 1.2px;
-    line-height: 17px;
+  }
+  .main-servicios .enviar-dos {
+    margin: 3% 5%;
+  }
+  .main-servicios .enviar-dos a {
+    margin: 4%;
+    padding: 2%;
+    color: white;
+    font-size: 1.1rem;
   }
   .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 20px;
+    font-size: 22px;
     margin: 2% 0% 1% 0%;
   }
+  .main-servicios .encabezado-curador img {
+    width: 45%;
+  }
   .main-servicios .texto-curador {
-    margin-top: 20px;
-    font-size: 13px;
-    letter-spacing: 1.2px;
-    line-height: 17px;
+    margin-top: 15px;
+    font-size: 18px;
   }
   .main-playlist h2 {
-    font-size: 30px;
+    font-size: 40px;
+    padding: 4% 3% 2% 3%;
   }
   .main-playlist .texto-playlists p {
-    font-size: 14px;
+    font-size: 18px;
     padding-right: 8%;
-    padding-left: 2%;
+    padding-left: 3%;
   }
   .main-playlist .indice-playlist ul li a {
     font-size: 15px;
@@ -820,7 +827,7 @@ footer .navegador-footer span a:hover {
   .pages-playlists .titulo-playlists h3 {
     margin-left: 1.5%;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 23px;
   }
   .pages-playlists .titulo-playlists .segui {
     display: flex;
@@ -846,7 +853,7 @@ footer .navegador-footer span a:hover {
     width: 45%;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a {
-    font-size: 12px;
+    font-size: 11px;
   }
   .main-contacto h2 {
     font-size: 25px;
@@ -858,14 +865,14 @@ footer .navegador-footer span a:hover {
     width: 15px;
   }
   footer .navegador-footer span a {
-    font-size: 12px;
-    padding: 3px 10px;
+    font-size: 14px;
+    padding: 0px 10px;
   }
 }
 /*############## SMARTPHONE 480 ####################*/
 @media (max-width: 480px) {
   header {
-    grid-template-areas: "encabezado" "navegador" "enviar";
+    grid-template-areas: "navegador" "encabezado" "enviar";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
@@ -876,29 +883,31 @@ footer .navegador-footer span a:hover {
   }
   header .encabezado .marca .logo-bekypequi {
     margin: 8px 5px 0px 0px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
   header .encabezado .marca h1 {
-    font-size: 20px;
+    font-size: 23px;
   }
   header .encabezado .marca .logo-spotify {
-    padding-top: 12px;
+    padding-top: 13px;
     margin: 5px;
     border-radius: 50%;
   }
   header .encabezado .marca .logo-spotify img {
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
   }
   header .encabezado .subtitulo {
     margin-left: 0%;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
   header .encabezado .subtitulo h2 {
-    font-size: 13px;
+    font-size: 18px;
   }
   header .navegador {
+    background-color: rgb(26, 26, 46);
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -908,13 +917,11 @@ footer .navegador-footer span a:hover {
     align-items: center;
   }
   header .navegador ul li {
-    margin: 10px 5px;
+    margin: 10px 3px;
   }
   header .navegador ul li a {
-    background-color: aliceblue;
-    color: black;
     padding: 3px 6px;
-    font-size: 10px;
+    font-size: 15px;
   }
   header .navegador ul li a:hover {
     padding: 4px 8px;
@@ -925,7 +932,9 @@ footer .navegador-footer span a:hover {
     padding-bottom: 10px;
   }
   header .enviar a {
-    font-size: 0.7rem;
+    border-radius: 2px;
+    background-color: rgb(248, 104, 52);
+    font-size: 1.3rem;
   }
   .main-inicio .caja-canciones {
     padding: 30px;
@@ -947,26 +956,25 @@ footer .navegador-footer span a:hover {
   .main-nosotros h2 {
     margin-bottom: 4%;
     margin-top: 4%;
-    font-size: 20px;
+    font-size: 30px;
   }
   .main-nosotros .texto-nosotros {
-    font-size: 12px;
-    letter-spacing: 1.2px;
-    line-height: 18px;
+    font-size: 15px;
   }
   .main-nosotros .texto-nosotros p {
-    padding-right: 5%;
+    padding-right: 4%;
   }
   .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 2%;
+  }
+  .main-servicios .encabezado-promocion img {
+    width: 45%;
   }
   .main-servicios .texto-promocion {
     margin-top: 15px;
-    font-size: 11px;
+    font-size: 15px;
     text-align: left;
-    letter-spacing: 1.1px;
-    line-height: 15px;
   }
   .main-servicios .enviar-dos {
     margin: 3% 5%;
@@ -975,30 +983,30 @@ footer .navegador-footer span a:hover {
     margin: 4%;
     padding: 2%;
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 14px;
+    font-size: 17px;
     margin: 2% 0% 1% 0%;
+  }
+  .main-servicios .encabezado-curador img {
+    width: 45%;
   }
   .main-servicios .texto-curador {
     margin-top: 15px;
-    font-size: 11px;
-    letter-spacing: 1.1px;
-    line-height: 15px;
+    font-size: 15px;
   }
   .main-playlist h2 {
-    font-size: 20px;
-    padding: 4% 3% 1% 3%;
+    font-size: 30px;
+    padding: 4% 3% 2% 3%;
   }
   .main-playlist .texto-playlists p {
-    font-size: 11px;
+    font-size: 16px;
     padding-right: 8%;
-    padding-left: 2%;
     padding-left: 3%;
   }
-  .main-playlist .indice-playlist ul li a {
-    font-size: 12px;
+  .main-playlist .indice-playlist ul li .boton-verde {
+    font-size: 17px;
   }
   .pages-playlists .titulo-playlists {
     margin-top: 20px;
@@ -1014,13 +1022,13 @@ footer .navegador-footer span a:hover {
   .pages-playlists .titulo-playlists h3 {
     margin-left: 1.5%;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 18px;
   }
   .pages-playlists .titulo-playlists .segui {
     display: flex;
   }
   .pages-playlists .titulo-playlists .segui p {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 300;
     margin-left: 10px;
     color: rgb(134, 247, 134);
@@ -1039,15 +1047,15 @@ footer .navegador-footer span a:hover {
     flex-direction: column;
   }
   .pages-playlists .caja-playlist iframe {
-    height: 250px;
-    width: 80%;
+    height: 300px;
+    width: 75%;
   }
   .pages-playlists .caja-playlist .indice-playlist2 {
     margin-left: 0%;
     margin-top: 20px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a {
-    font-size: 12px;
+    font-size: 15px;
   }
   .main-contacto h2 {
     font-size: 25Px;
@@ -1062,8 +1070,8 @@ footer .navegador-footer span a:hover {
     margin-top: 0px;
   }
   footer .navegador-footer span a {
-    font-size: 10px;
-    padding: 3px 5px;
+    font-size: 13px;
+    padding: 0px 7px;
   }
 }
 
