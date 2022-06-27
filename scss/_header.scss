@@ -57,16 +57,17 @@ header {
                 margin-top: 20px;
                 margin-right: 20px;          
                 a {
+                    @include boton-redondeado;
                     color: rgb(212, 202, 202);
                     font-weight: 300;
-                    border-radius: 60px;
-                    transition: all 0.5s ease;
                     padding: 5px 10px;
                     font-size: 20px;
+                    border-width: 0px;
                     &:hover {
                         padding: 7px 12px;
                         background-color: aliceblue;
                         color: black;
+                        text-shadow: none;
                     }
                 }
             }
@@ -87,11 +88,11 @@ header {
             padding: 1.5% 2%;
             color: rgb(228, 217, 217);
             font-size: 1.3rem;
-            background-color: #673ab7;
+            background-color: orangered;
             border-radius: 60px;
             transition: all 0.5s ease;
             &:hover {
-                background-color: orangered;   
+                background-color: #673ab7;   
             }  
         }
     }

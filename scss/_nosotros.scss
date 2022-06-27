@@ -11,9 +11,7 @@
         text-align: left;
         font-size: 23px;
         p {
-            padding-left: 3%;
-            padding-right: 10%;
-            font-weight: 300;
+            @include parrafos-principales;
         }
     }
 }

@@ -1,7 +1,17 @@
 .main-inicio {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
+    p {
+        @include parrafos-principales;
+        font-style: italic;
+        font-size: 50px;
+        text-align: center;
+        border-bottom: solid 1px rgb(80, 79, 79);
+        margin: 0% 5%;
+        padding-bottom: 2%;
+        color: rgb(126, 245, 126);
+    }
     .texto-canciones {
         display: flex;
         flex-direction: column;

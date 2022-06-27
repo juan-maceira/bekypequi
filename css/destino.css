@@ -73,17 +73,30 @@ header .navegador ul li {
   margin-right: 20px;
 }
 header .navegador ul li a {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  border-radius: 60px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
   color: rgb(212, 202, 202);
   font-weight: 300;
-  border-radius: 60px;
-  transition: all 0.5s ease;
   padding: 5px 10px;
   font-size: 20px;
+  border-width: 0px;
+}
+header .navegador ul li a:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
 }
 header .navegador ul li a:hover {
   padding: 7px 12px;
   background-color: aliceblue;
   color: black;
+  text-shadow: none;
 }
 header .enviar {
   grid-area: enviar;
@@ -100,12 +113,12 @@ header .enviar a {
   padding: 1.5% 2%;
   color: rgb(228, 217, 217);
   font-size: 1.3rem;
-  background-color: #673ab7;
+  background-color: orangered;
   border-radius: 60px;
   transition: all 0.5s ease;
 }
 header .enviar a:hover {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 
 footer {
@@ -147,9 +160,24 @@ footer .navegador-footer span a:hover {
 }
 
 .main-inicio {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
+}
+.main-inicio p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: solid 1px rgb(80, 79, 79);
+  margin: 0% 5%;
+  padding-bottom: 2%;
+  color: rgb(126, 245, 126);
 }
 .main-inicio .texto-canciones {
   display: flex;
@@ -194,9 +222,12 @@ footer .navegador-footer span a:hover {
   font-size: 23px;
 }
 .main-nosotros .texto-nosotros p {
-  padding-left: 3%;
-  padding-right: 10%;
   font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
 }
 
 .main-servicios {
@@ -235,9 +266,11 @@ footer .navegador-footer span a:hover {
 }
 .main-servicios .texto-promocion p {
   font-weight: 300;
-  color: rgb(185, 174, 174);
-  padding-left: 3%;
+  text-align: left;
+  font-size: 23px;
   padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
 }
 .main-servicios .enviar-dos {
   margin: 0% 2%;
@@ -293,9 +326,11 @@ footer .navegador-footer span a:hover {
 }
 .main-servicios .texto-curador p {
   font-weight: 300;
-  color: rgb(185, 174, 174);
-  padding-left: 3%;
+  text-align: left;
+  font-size: 23px;
   padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
 }
 
 .main-playlist h2 {
@@ -311,13 +346,14 @@ footer .navegador-footer span a:hover {
 }
 .main-playlist .texto-playlists p {
   font-weight: 300;
+  text-align: left;
   font-size: 23px;
-  padding-right: 10%;
-  padding-left: 2%;
-  color: rgb(185, 174, 174);
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
 }
 .main-playlist .indice-playlist {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -405,13 +441,14 @@ footer .navegador-footer span a:hover {
 }
 .pages-playlists .caja-playlist .indice-playlist2 ul li a {
   color: white;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
-  border-radius: 50px;
+  border-radius: 60px;
   padding: 5px 15px;
   border-style: solid;
   border-width: 1Px;
   transition: all 0.5s ease;
+  font-size: 20px;
 }
 .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
   background-color: rgb(23, 139, 23);
@@ -477,6 +514,22 @@ footer .navegador-footer span a:hover {
     font-size: 20px;
     letter-spacing: 1.3px;
     line-height: 35px;
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2%;
+    color: rgb(126, 245, 126);
   }
   .main-servicios .encabezado-promocion .titulo-promocion {
     font-size: 45px;
@@ -587,6 +640,22 @@ footer .navegador-footer span a:hover {
   }
   header .enviar a {
     font-size: 0.9rem;
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 2%;
+    color: rgb(126, 245, 126);
   }
   .main-inicio .caja-canciones {
     grid-template-columns: repeat(3, 1fr);
@@ -720,6 +789,7 @@ footer .navegador-footer span a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 10px 0px;
   }
   header .navegador ul {
     justify-content: center;
@@ -730,7 +800,7 @@ footer .navegador-footer span a:hover {
   }
   header .navegador ul li a {
     padding: 3px 6px;
-    font-size: 18px;
+    font-size: 19px;
   }
   header .navegador ul li a:hover {
     padding: 4px 8px;
@@ -738,12 +808,29 @@ footer .navegador-footer span a:hover {
   header .enviar {
     padding: 0px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   header .enviar a {
     border-radius: 2px;
     background-color: rgb(248, 104, 52);
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    color: rgb(19, 18, 18);
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2%;
+    color: rgb(126, 245, 126);
   }
   .main-inicio .caja-canciones {
     grid-template-columns: repeat(1, 1fr);
@@ -904,13 +991,14 @@ footer .navegador-footer span a:hover {
     margin-bottom: 3px;
   }
   header .encabezado .subtitulo h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   header .navegador {
     background-color: rgb(26, 26, 46);
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 8px 0px;
   }
   header .navegador ul {
     justify-content: center;
@@ -921,7 +1009,8 @@ footer .navegador-footer span a:hover {
   }
   header .navegador ul li a {
     padding: 3px 6px;
-    font-size: 15px;
+    font-size: 16px;
+    border-radius: 0px;
   }
   header .navegador ul li a:hover {
     padding: 4px 8px;
@@ -929,12 +1018,29 @@ footer .navegador-footer span a:hover {
   header .enviar {
     padding: 0px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   header .enviar a {
     border-radius: 2px;
     background-color: rgb(248, 104, 52);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: rgb(19, 18, 18);
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 2%;
+    color: rgb(126, 245, 126);
   }
   .main-inicio .caja-canciones {
     padding: 30px;
@@ -958,11 +1064,14 @@ footer .navegador-footer span a:hover {
     margin-top: 4%;
     font-size: 30px;
   }
-  .main-nosotros .texto-nosotros {
-    font-size: 15px;
-  }
   .main-nosotros .texto-nosotros p {
-    padding-right: 4%;
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
   }
   .main-servicios .encabezado-promocion .titulo-promocion {
     font-size: 17px;
@@ -973,8 +1082,15 @@ footer .navegador-footer span a:hover {
   }
   .main-servicios .texto-promocion {
     margin-top: 15px;
-    font-size: 15px;
+  }
+  .main-servicios .texto-promocion p {
+    font-weight: 300;
     text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
   }
   .main-servicios .enviar-dos {
     margin: 3% 5%;
@@ -994,15 +1110,28 @@ footer .navegador-footer span a:hover {
   }
   .main-servicios .texto-curador {
     margin-top: 15px;
-    font-size: 15px;
+  }
+  .main-servicios .texto-curador p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
   }
   .main-playlist h2 {
     font-size: 30px;
     padding: 4% 3% 2% 3%;
   }
   .main-playlist .texto-playlists p {
-    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
     padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
     padding-left: 3%;
   }
   .main-playlist .indice-playlist ul li .boton-verde {

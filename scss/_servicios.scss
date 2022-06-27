@@ -31,10 +31,7 @@
         font-size: 23px;
         text-align: left;      
         p {
-            font-weight: 300;
-            color: rgb(185, 174, 174);
-            padding-left: 3%;
-            padding-right: 8%;
+            @include parrafos-principales;
         }    
     }
     .enviar-dos {
@@ -89,10 +86,7 @@
         flex-direction: column;
         justify-content: start;
         p {
-            font-weight: 300;
-            color: rgb(185, 174, 174);
-            padding-left: 3%;
-            padding-right: 8%;
+            @include parrafos-principales;
         }
     }       
 }

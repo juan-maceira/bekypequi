@@ -65,7 +65,17 @@
         }
     }
         
-    
+    .main-inicio {
+        margin-top: 2%;
+        p {
+            @include parrafos-principales;
+            font-style: italic;
+            text-align: center;
+            font-size: 40px;         
+            padding-bottom: 2%;
+            color: rgb(126, 245, 126);
+        }
+    }
         
     .main-servicios {
         .encabezado-promocion {
@@ -244,6 +254,15 @@
 
         
     .main-inicio {
+        margin-top: 2%;
+        p {
+            @include parrafos-principales;
+            font-style: italic;
+            text-align: center;
+            font-size: 30px;         
+            padding-bottom: 2%;
+            color: rgb(126, 245, 126);
+        }
         .caja-canciones {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(8, 1fr);       
@@ -435,6 +454,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
+            padding: 10px 0px;
             ul {
                 justify-content: center;
                 align-items: center;
@@ -442,7 +462,7 @@
                     margin: 10px 5px;         
                     a {
                         padding: 3px 6px;
-                        font-size: 18px;
+                        font-size: 19px;
                         &:hover {
                             padding: 4px 8px;
                         }
@@ -453,17 +473,27 @@
         .enviar {
             padding: 0px;
             margin-top: 10px;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
             a {
                 border-radius: 2px;
                 background-color: rgb(248, 104, 52);
-                font-size: 1.5rem; 
+                font-size: 1.9rem;
+                color: rgb(19, 18, 18);  
             }
         }
             
     }
 
     .main-inicio {
+        margin-top: 2%;
+        p {
+            @include parrafos-principales;
+            font-style: italic;
+            text-align: center;
+            font-size: 25px;         
+            padding-bottom: 2%;
+            color: rgb(126, 245, 126);
+        }
         .caja-canciones {
             grid-template-columns: repeat(1, 1fr);
             iframe {
@@ -685,7 +715,7 @@
                 margin-top: 3px;
                 margin-bottom: 3px;
                 h2 {
-                    font-size: 18px;    
+                    font-size: 20px;    
                 }
             }       
         }
@@ -694,6 +724,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
+            padding: 8px 0px;
             ul {
                 justify-content: center;
                 align-items: center;
@@ -701,7 +732,8 @@
                     margin: 10px 3px;         
                     a {
                         padding: 3px 6px;
-                        font-size: 15px;
+                        font-size: 16px;
+                        border-radius: 0px;
                         &:hover {
                             padding: 4px 8px;
                         }
@@ -712,17 +744,27 @@
         .enviar {
             padding: 0px;
             margin-top: 10px;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             a {
                 border-radius: 2px;
                 background-color: rgb(248, 104, 52);
-                font-size: 1.3rem; 
+                font-size: 1.5rem;
+                color: rgb(19, 18, 18); 
             }
         }
             
     }
     
     .main-inicio {
+        margin-top: 2%;
+        p {
+            @include parrafos-principales;
+            font-style: italic;
+            text-align: center;
+            font-size: 23px;         
+            padding-bottom: 2%;
+            color: rgb(126, 245, 126);
+        }
         .caja-canciones {
             padding: 30px;       
             display: grid;
@@ -747,9 +789,10 @@
             font-size:30px;
         } 
         .texto-nosotros {
-            font-size: 15px;
+            
             p {
-                padding-right: 4%;
+                @include parrafos-principales;
+                font-size: 18px;
             }
         }
     }
@@ -765,8 +808,12 @@
         }
         .texto-promocion { 
             margin-top: 15px;   
-            font-size: 15px;
-            text-align: left;       
+            
+            p {
+                @include parrafos-principales;
+                font-size: 18px;
+
+            }      
         }
         .enviar-dos {
             margin: 3% 5%;
@@ -788,8 +835,11 @@
             }
         }
         .texto-curador {
-            margin-top: 15px;
-            font-size: 15px;
+            margin-top: 15px;           
+            p {
+                @include parrafos-principales;
+                font-size: 18px;
+            }
         }       
     }
     .main-playlist {
@@ -800,8 +850,8 @@
         
         .texto-playlists {   
             p {
-                font-size: 16px;
-                padding-right: 8%;
+                @include parrafos-principales;
+                font-size: 18px;
                 padding-left: 3%;       
             } 
         }
