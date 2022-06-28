@@ -38,7 +38,7 @@
                     margin-right: 15px;          
                     a {
                         padding: 4px 8px;
-                        font-size: 17px;
+                        font-size: 18px;
                         &:hover {
                             padding: 6px 10px;
                         }
@@ -55,7 +55,7 @@
     }
     
     .main-nosotros {
-        h2 {
+        h3 {
             font-size: 50px;
         } 
         .texto-nosotros {
@@ -67,20 +67,30 @@
         
     .main-inicio {
         margin-top: 2%;
-        p {
+        .texto-inicio {
             @include parrafos-principales;
             font-style: italic;
             text-align: center;
-            font-size: 40px;         
+            font-size: 30px;         
             padding-bottom: 2%;
             color: rgb(126, 245, 126);
         }
+        .texto-canciones {
+            font-size: 50px;
+            h3 {
+                font-weight: 300;
+            }
+         }   
+         .subtitulo-canciones {
+            @include parrafos-principales;
+            font-size: 20px;
+         }
     }
         
     .main-servicios {
         .encabezado-promocion {
             .titulo-promocion {
-                font-size:45px;
+                font-size:55px;
                 margin-bottom: 2%;     
             }
         }
@@ -101,7 +111,7 @@
     }
 
     .main-playlist {
-        h2{
+        h3{
             font-size: 50px;   
         }
         
@@ -116,8 +126,9 @@
         .indice-playlist { 
             ul {
                 li { 
-                    a {
-                        font-size: 23px;     
+                    .boton-verde {
+                        @include boton-redondeado;
+                        font-size: 28px;   
                     }
                 }
             }
@@ -159,15 +170,16 @@
         }
         .caja-playlist {
             iframe {
-                height: 300px;
+                height: 350px;
                 width: 1500px;
             } 
             .indice-playlist2 {      
                 ul {
                     li { 
-                        a {
-                            font-size: 18px;     
-                        }
+                        a { 
+                            @include boton-redondeado;
+                            font-size: 23px; 
+                            }  
                     }
                 }
             }   
@@ -236,7 +248,7 @@
                     margin-right: 15px;          
                     a {
                         padding: 3px 6px;
-                        font-size: 14px;
+                        font-size: 15px;
                         &:hover {
                             padding: 4px 8px;
                         }
@@ -255,25 +267,28 @@
         
     .main-inicio {
         margin-top: 2%;
-        p {
+        .texto-inicio {
             @include parrafos-principales;
             font-style: italic;
             text-align: center;
-            font-size: 30px;         
+            font-size: 25px;         
             padding-bottom: 2%;
             color: rgb(126, 245, 126);
         }
-        .caja-canciones {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(8, 1fr);       
-        }
         .texto-canciones {
-            font-size: 50px;  
-        }       
+            font-size: 40px;
+            h3 {
+                font-weight: 300;
+            }
+         }   
+         .subtitulo-canciones {
+            @include parrafos-principales;
+            font-size: 18px;
+         }    
     }
     
     .main-nosotros {
-        h2 {
+        h3 {
             font-size:40px;
         } 
         .texto-nosotros {
@@ -309,12 +324,12 @@
         }       
     }
     .main-contacto {
-        h2 {
+        h3 {
             font-size: 30px;
         }   
     }
     .main-playlist {
-        h2{
+        h3 {
             font-size:40px;   
         }
         
@@ -329,8 +344,9 @@
         .indice-playlist { 
             ul {
                 li { 
-                    a {
-                        font-size: 18px;     
+                    .boton-verde {
+                        @include boton-redondeado;
+                        font-size: 28px;   
                     }
                 }
             }
@@ -372,15 +388,16 @@
         }
         .caja-playlist {
             iframe {
-                height: 300px;
+                height: 350px;
                 width: 1500px;
             } 
             .indice-playlist2 {      
                 ul {
                     li { 
-                        a {
-                            font-size: 18px;     
-                        }
+                        a { 
+                            @include boton-redondeado;
+                            font-size: 20px; 
+                            }  
                     }
                 }
             }   
@@ -411,6 +428,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
     
     header { 
+        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 45% );
         grid-template-areas: 
         "navegador"
         "encabezado"
@@ -450,7 +468,6 @@
             }       
         }
         .navegador {
-            background-color: rgb(26, 26, 46);
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -462,7 +479,7 @@
                     margin: 10px 5px;         
                     a {
                         padding: 3px 6px;
-                        font-size: 19px;
+                        font-size: 20px;
                         &:hover {
                             padding: 4px 8px;
                         }
@@ -486,7 +503,7 @@
 
     .main-inicio {
         margin-top: 2%;
-        p {
+        .texto-inicio{
             @include parrafos-principales;
             font-style: italic;
             text-align: center;
@@ -494,22 +511,30 @@
             padding-bottom: 2%;
             color: rgb(126, 245, 126);
         }
-        .caja-canciones {
-            grid-template-columns: repeat(1, 1fr);
-            iframe {
-                width: 300px;
-                height: 80px;
-            }
-        }
         .texto-canciones {
-            font-size: 38px;
-            margin-left: 20px;
-        }    
+            font-size: 30px;
+            h3 {
+                font-weight: 300;
+            }
+         }   
+         .subtitulo-canciones {
+            @include parrafos-principales;
+            font-size: 18px;
+         }
+         .caja-canciones {
+            padding: 30px 20px;    
+            iframe {
+                margin: 10px 10px;
+                width: 80px;
+                height: 80px;
+            }   
+        }
+         
     }
     
     .main-nosotros {
         margin: 4% 0%;
-        h2 {
+        h3 {
             margin-bottom: 4%;
             margin-top: 4%;
             font-size:40px;
@@ -561,7 +586,7 @@
         }       
     }
     .main-playlist {
-        h2{
+        h3{
             font-size:40px;
             padding: 4% 3% 2% 3%;    
         }
@@ -577,8 +602,9 @@
         .indice-playlist { 
             ul {
                 li { 
-                    a {
-                        font-size: 15px;     
+                    .boton-verde {
+                        @include boton-redondeado;
+                        font-size: 25px;   
                     }
                 }
             }
@@ -624,16 +650,20 @@
             }          
         }
         .caja-playlist {
+            flex-direction: column;
+            margin: 5% 0%;
             iframe {
                 height: 250px;
-                width: 45%;
+                width: 80%;
             } 
-            .indice-playlist2 {      
+            .indice-playlist2 {
+                margin-top: 20px;      
                 ul {
                     li { 
-                        a {
-                            font-size: 11px;     
-                        }
+                        a { 
+                            @include boton-redondeado;
+                            font-size: 20px; 
+                            }  
                     }
                 }
             }   
@@ -641,7 +671,7 @@
     }
         
     .main-contacto {
-        h2 {
+        h3 {
             font-size: 25px;
         }
     }  
@@ -681,6 +711,7 @@
 @media (max-width: 480px) {
         
     header { 
+        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 40%);
         grid-template-areas: 
         "navegador"
         "encabezado"
@@ -720,7 +751,7 @@
             }       
         }
         .navegador {
-            background-color: rgb(26, 26, 46);
+            
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -757,33 +788,35 @@
     
     .main-inicio {
         margin-top: 2%;
-        p {
+        .texto-inicio {
             @include parrafos-principales;
             font-style: italic;
             text-align: center;
-            font-size: 23px;         
+            font-size: 20px;         
             padding-bottom: 2%;
             color: rgb(126, 245, 126);
         }
+        .subtitulo-canciones {
+            @include parrafos-principales;
+            font-size: 18px;
+         }
         .caja-canciones {
-            padding: 30px;       
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(11, 1fr);
+            padding: 30px 20px;    
             iframe {
-                width: 100%;
+                margin: 10px 10px;
+                width: 80px;
                 height: 80px;
-            }       
+            }   
         }
         .texto-canciones {
             font-size: 25px;
-            margin-left: 20px;
+            margin-left: 1%;
         }   
     }
 
     .main-nosotros {
         margin: 4% 0%;
-        h2 {
+        h3 {
             margin-bottom: 4%;
             margin-top: 4%;
             font-size:30px;
@@ -843,7 +876,7 @@
         }       
     }
     .main-playlist {
-        h2{
+        h3 {
             font-size:30px;
             padding: 4% 3% 2% 3%;   
         }
@@ -857,10 +890,12 @@
         }
          
         .indice-playlist { 
+            padding: 7% 1%;
             ul {
                 li { 
                     .boton-verde {
-                        font-size: 17px;     
+                        @include boton-redondeado;
+                        font-size: 20px;   
                     }
                 }
             }
@@ -908,20 +943,22 @@
         }
         .caja-playlist {
             flex-direction: column;
-        
+            margin: 3% 0%;
             iframe {
-                height: 300px;
-                width: 75%;
+                height: 250px;
+                width: 100%;
+                border-radius: 0px;
                 
             } 
             .indice-playlist2 {
                 margin-left: 0%;
                 margin-top: 20px;      
                 ul {
-                    li { 
-                        a {
-                            font-size: 15px;     
-                        }
+                    li {
+                        a { 
+                        @include boton-redondeado;
+                        font-size: 18px; 
+                        }  
                     }
                 }
             }   
@@ -929,7 +966,7 @@
     }
 
     .main-contacto {
-        h2 {
+        h3 {
             font-size: 25Px;
         }
     }
