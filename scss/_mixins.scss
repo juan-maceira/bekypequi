@@ -22,3 +22,9 @@
     padding-left: 2.5%;        
     color: rgb(207, 197, 197);   
 }
+
+@mixin titulos-principales {
+    font-weight: 300;
+    padding-left: 4%;
+    color: rgb(114, 250, 250);
+}

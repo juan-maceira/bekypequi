@@ -428,7 +428,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
     
     header { 
-        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 45% );
+        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 40%);
         grid-template-areas: 
         "navegador"
         "encabezado"
@@ -711,7 +711,7 @@
 @media (max-width: 480px) {
         
     header { 
-        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 40%);
+        background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 35%);
         grid-template-areas: 
         "navegador"
         "encabezado"

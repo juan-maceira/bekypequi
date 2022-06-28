@@ -1,10 +1,10 @@
 .main-nosotros {
     margin: 3% 0%;
     h3 {
-        font-size: 60px;
+        @include titulos-principales;
+        font-size: 70px;
         font-weight: 300;
         margin-bottom: 2%;
-        color: rgb(224, 224, 224);
         padding-left: 3%;
     } 
     .texto-nosotros {
