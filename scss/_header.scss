@@ -1,104 +1,132 @@
-
-header { 
-    display: grid;
-    grid-template-areas: 
-    "encabezado navegador"
-    "enviar enviar";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    .encabezado {
-        grid-area: encabezado;
-        display: flex;
-        flex-direction: column;
-        .marca {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            .logo-bekypequi {
-                margin:10px 10px 0px 10px;
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-            }
-            h1 {
-                margin-top: 10px;
-                font-weight: 300;
-                font-size:50px;     
-            }
-            .logo-spotify {
-                padding-top: 20px;
-                margin:10px;
-                margin-bottom: px;
-                border-radius: 50%;
-                img {
-                    width: 30px;
-                    height: 30px;
+header {
+    nav {
+        .contenedor-nav {
+            .encabezado {
+                display: flex;
+                align-items: center;
+                .enlace-logo {
+                    display: flex;
+                    align-items: baseline;
+                    img {
+                        width: 60px;
+                        height:60px;
+                        border-radius: 50%;
+                        margin-bottom: 5px;
+                    }
                 }
-            }
-        }    
-        .subtitulo {
-            margin-left: 4%;
-            h2 {
-                font-weight: 300;
-                font-size: 25px;
-                color: rgb(185, 174, 174);      
-            }
-        }       
-    }
-    .navegador {
-        grid-area: navegador;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        ul {
-            display: flex;
-            justify-content: flex-end;
-            li {
-                margin-top: 20px;
-                margin-right: 20px;          
-                a {
-                    @include boton-redondeado;
-                    color: rgb(212, 202, 202);
-                    font-weight: 300;
-                    padding: 5px 10px;
-                    font-size: 20px;
-                    border-width: 0px;
-                    &:hover {
-                        padding: 7px 12px;
-                        background-color: aliceblue;
-                        color: black;
-                        text-shadow: none;
+                .titulos {
+                    display: flex;
+                    flex-direction: column;
+                    h1 {
+                        font-weight: 400;
+                        color: beige;
+                        font-size: 30px;
+                    }
+                    .subtitulo {
+                        display: flex;
+                        align-items: center;
+                        h2 {
+                            color: rgb(223, 219, 219);
+                            font-weight: 300;
+                            font-size: 20px;  
+                        }
+                        .logo-spotify {
+                            width: 20px; 
+                            height: 20px;
+                            margin-left: 7px;
+                            margin-bottom: 7px;
+                            
+                        }
                     }
                 }
             }
-        }  
-    }
-    .enviar {
-        
-        grid-area: enviar;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content:space-evenly;
-        align-items: center;
-        border-bottom: 1px solid rgb(80, 79, 79);
-        padding-bottom: 3vh;
-        margin: 0% 5%;
-        a {
-            text-align: center;
-            padding: 1.5% 2%;
-            color: rgb(228, 217, 217);
-            font-size: 1.3rem;
-            background-color: orangered;
-            border-radius: 60px;
-            transition: all 0.5s ease;
-            &:hover {
-                background-color: #673ab7;   
-            }  
+            button {
+                border: 0px !important;
+                svg {
+                    color: aliceblue;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            #menu {
+                ul {
+                    li {
+                        .nav-link {
+                            font-weight: 400;
+                            font-size: 18px;
+                            margin-left: 13px;
+                            color: rgb(216, 213, 213) !important;
+                            transition: all 0.5s ease;
+                            &:hover {
+                                color: rgb(243, 118, 73) !important;
+                            }
+                        }
+
+                    }
+                }
+                .redes-menu {
+                    margin-top: 15px;
+                    margin-right: 5px;
+                    display: flex;
+                    list-style-type: none;
+                    li {
+                        a {
+                            .logo-redes-menu {
+                                width: 20px;
+                                height: 20px;
+                                margin: 2px 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dropdown-item {
+                color: white; 
+                font-size: 22.5px;
+                text-align: center;
+                border-radius: 100px;
+                padding: 3px 10px;
+                margin: 10px 0px;               
+                transition: all 0.3s ease;
+                &:hover {
+                    text-shadow: none;
+                    background-color: rgb(230, 227, 227);
+                    color: black;
+                }                
+            }
+            .dropdown-menu {
+                border-left: solid 1px;
+                border-right: solid 1px;
+                border-radius: 0px;
+                padding: 0px 10px;                  
+                background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(10, 10, 10) 90%);
+                
+            }           
         }
     }
-        
-}
+    .boton-sh {
+        background-image: linear-gradient(to bottom, rgb(240, 78, 20) , rgb(70, 22, 5) 85%);
+        display: flex;
+        justify-content: center;
+    }
 
+    .boton-sh a {       
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 15px 10px 20px 10px;
+        text-decoration: none;
+        color: rgb(231, 227, 227);
+        font-size: 40px;
+        transition: all 0.5s ease;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+    .boton-sh a:hover {
+        background-image: linear-gradient(to bottom, rgb(240, 78, 20) , rgb(70, 22, 5) 95%);
+        color: rgb(252, 250, 250);
+    }
+}
 
 
 

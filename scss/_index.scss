@@ -1,44 +1,82 @@
 .main-inicio {
-    margin-top: 1.5%;
     display: flex;
     flex-direction: column;
-    .texto-inicio {
-        @include parrafos-principales;
-        font-style: italic;
-        font-size: 35px;
-        text-align: center;
-        border-bottom: solid 1px rgb(80, 79, 79);
-        margin: 0% 5%;
-        padding-bottom: 1.5%;
-        color: rgb(138, 135, 135);
-    }
-    .texto-canciones {
-        
-        
-        h3 {
-            @include titulos-principales;
-            font-weight: 300;font-size: 60px;
-            padding: 2% 0% 0% 2%;
+    .caja-texto-inicio {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed;
+        .texto-inicio {
+           
+            font-size: 63px;
+            font-weight: 600;
+            text-align: center;
+            padding: 40px 10%;
+            margin: 0px 8%;
+            color: rgb(226, 224, 224);
+            text-shadow: 2px 2px 2px rgb(19, 19, 19);
         }
-     }   
-     .subtitulo-canciones {
-        @include parrafos-principales;
-        font-size: 25px;
-     }
-    .caja-canciones {
-        padding: 30px;    
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        iframe {
-            margin: 10px 10px;
-            width: 250px;
-            height: 80px;
-            border-radius: 3px;
-        }   
+    }
+   
+    .texto-playlists {
+        background-image: linear-gradient(to top left, rgb(6, 6, 83), rgb(1, 1, 19) 60%);
+        padding-bottom: 50px;
+        padding-top: 50px;
+        &:hover {
+            background-image: linear-gradient(to bottom right, rgb(6, 6, 83), rgb(1, 1, 19) 60%);      
+        }
+        h3 {
+            text-shadow: 1px 1px 1px rgb(19, 19, 19);
+            font-size: 60px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            margin-bottom: 20px;
+            color: rgb(155, 248, 217);   
+        }       
+        p {
+            padding-left: 40px; 
+            padding-right: 40px;         
+            font-weight: 300;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px rgb(19, 19, 19);
+        } 
+    }
+
+    .seccion-canciones { 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed;
+        .texto-canciones {
+            margin: 40px;
+            p {
+                text-align: right;
+                font-size: 65px;
+                font-weight: 600;
+                margin: 0px 30px;
+                color: rgb(226, 224, 224);
+                text-shadow: 2px 2px 2px rgb(19, 19, 19);            
+            }
+        }
+        .caja-canciones {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+            margin: 40px 40px 60px 40px;
+            iframe {
+                margin: 20px 15px;
+                width: 250px;
+                height: 80px;
+                border-radius: 3px;
+            }   
+        }
     }
 }
-
 
 
 
