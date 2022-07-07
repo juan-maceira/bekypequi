@@ -5,7 +5,7 @@
     .main-inicio {
         .caja-texto-inicio {
             .texto-inicio {
-                font-size: 50px;
+                font-size: 52px;
                 padding: 40px 10%;
                 margin: 0px 5%;
             }
@@ -40,66 +40,43 @@
     }
 
     .main-nosotros {
-        padding: 3% 0%;
         h3 {
-            font-size: 70px;
+            font-size: 80px;
             margin-bottom: 2%;
         } 
         .texto-nosotros {
             font-size: 25px;
-            margin-left: 40px;
-            margin-right: 10%;
         }
     }
         
-    .main-servicios {
+    .main-promocion {
         .encabezado-promocion {
-            .titulo-promocion {
-                font-size:55px !important;
-                margin-bottom: 2%;     
+            .titulo-promocion {           
+                h3 {
+                    font-size: 70px;
+                    padding-left: 5%;
+                }       
             }
         }
-        .texto-promocion {    
-            font-size: 20px;
-            text-align: left;       
+        .texto-promocion {       
+            font-size: 25px;
+            text-align: left;      
         }
+    }
+
+    .main-tutorias {
         .encabezado-curador {
-            .titulo-curador {
-                font-size: 45px;
-                margin: 2% 0% 1% 0%;     
+            .titulo-curador { 
+                h3 {
+                    font-size:105px;
+                }      
             }
         }
         .texto-curador {
-            margin-top: 20px;
-            font-size: 20px;
-        }       
-    }
-
-    .main-playlist {
-        h3{
-            font-size: 50px;   
+            margin-top: 20px;   
+            font-size: 25px;
         }
-        
-        .texto-playlists {   
-            p {
-                font-size: 20px;
-                padding-right: 8%;
-                padding-left: 2%;       
-            } 
-        }
-         
-        .indice-playlist { 
-            ul {
-                li { 
-                    .boton-verde {
-                        @include boton-redondeado;
-                        font-size: 28px;   
-                    }
-                }
-            }
-        }
-                    
-    }
+    }       
 
     .pages-playlists {
         .titulo-playlists {
@@ -110,8 +87,7 @@
             align-items:baseline;
             h3 {
                 margin-left: 2%;
-                font-weight: 300;
-                font-size: 50px;
+                font-size: 60px;
             }
             .segui {
                 display: flex;
@@ -236,7 +212,7 @@
     .main-inicio {
         .caja-texto-inicio {
             .texto-inicio {
-                font-size: 45px;
+                font-size: 48px;
                 padding: 40px 8%;
                 margin: 0px 5%;
             }
@@ -262,7 +238,6 @@
                 margin: 40px;
                 p {
                     font-size: 45px;
-                    font-weight: 600;
                     margin: 0px 30px;           
                 }
             }
@@ -270,82 +245,53 @@
     }
     
     .main-nosotros {
-        padding: 3% 0%;
+        padding: 2% 0%;
         h3 {
-            font-size: 60px;
+            font-size: 70px;
             margin-bottom: 2%;
         } 
         .texto-nosotros {
             font-size: 23px;
-            margin-left: 40px;
-            margin-right: 10%;
         }
     }
         
-    .main-servicios {
+    .main-promocion {
         .encabezado-promocion {
-            .titulo-promocion {
-                font-size:35px;
-                margin-bottom: 2%;     
+            .titulo-promocion {           
+                h3 {
+                    font-size: 60px;
+                    padding-left: 5%;
+                }       
             }
         }
-        .texto-promocion {    
-            font-size: 17px;
-            text-align: left;        
+        .texto-promocion {      
+            font-size: 23px;
+            text-align: left;      
         }
-        .encabezado-curador {
-            .titulo-curador {
-                font-size: 35px;
-                margin: 2% 0% 1% 0%;     
-            }
-        }
-        .texto-curador {
-            margin-top: 20px;
-            font-size: 17px;
-        }       
-    }
-    .main-contacto {
-        h3 {
-            font-size: 30px;
-        }   
-    }
-    .main-playlist {
-        h3 {
-            font-size:40px;   
-        }
-        
-        .texto-playlists {   
-            p {
-                font-size: 17px;
-                padding-right: 8%;
-                padding-left: 2%;       
-            } 
-        }
-         
-        .indice-playlist { 
-            ul {
-                li { 
-                    .boton-verde {
-                        @include boton-redondeado;
-                        font-size: 28px;   
-                    }
-                }
-            }
-        }
-                    
     }
 
+    .main-tutorias {
+        .encabezado-curador {
+            .titulo-curador { 
+                h3 {
+                    font-size: 82px;
+                }      
+            }
+        }
+        .texto-curador {  
+            font-size: 23px;
+        }
+    }       
+    
     .pages-playlists {
         .titulo-playlists {
-            margin-top: 20px;
             padding-left: 20px;
             display: flex;
             justify-content: start;
             align-items:baseline;
             h3 {
                 margin-left: 1.5%;
-                font-weight: 300;
-                font-size: 40px;
+                font-size: 43px;
             }
             .segui {
                 display: flex;
@@ -385,6 +331,25 @@
         }
     }
 
+    .main-contacto { 
+        .caja-contacto {
+            width: 80%;
+            h3 {
+                font-size: 40Px;
+            }
+            form {
+                div {
+                    label {
+                        font-size: 25px;
+                    }
+                }
+                label {
+                    font-size: 25px;
+                }
+            } 
+        }    
+    }
+
     footer {
         .volver-arriba {
             a {
@@ -404,9 +369,9 @@
     
     
     
-    /*####################### TABLET 481 / 767 #######################*/
+    /*####################### TABLET 576 / 767 #######################*/
     
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     
     header {
         nav {
@@ -458,16 +423,18 @@
                 }                
             }
         }
-        .boton-sh a {
-            font-size: 35px;
+            .boton-sh {
+            .boton-enviar {
+                font-size: 27px;
+            }
         }
     }
 
     .main-inicio {
         .caja-texto-inicio {
             .texto-inicio {
-                font-size: 35px;
-                padding: 40px 8%;
+                font-size: 40px;
+                padding: 30px 8%;
                 margin: 0px 5%;
             }
         }      
@@ -509,84 +476,49 @@
     }
     
     .main-nosotros {
-        padding: 8% 0% 4% 0%;
+        padding: 3% 0% 4% 0%;
         h3 {
             font-size: 50px;
-            margin-bottom: 2%;
-            margin-left: 30px;
+            margin-bottom: 3%;
+            margin-left: 20px;
         } 
         .texto-nosotros {
             font-size: 21px;
-            margin-left: 30px;
-            margin-right: 10%;
+            margin-left: 20px;
+    
         }
     }
-    .main-servicios {
+    .main-promocion {
         .encabezado-promocion {
-            .titulo-promocion {
-                font-size: 22px;
-                margin-bottom: 2%;     
-            }
-            img {
-                width: 45%;
-            }
-        }
-        .texto-promocion { 
-            margin-top: 15px;   
-            font-size: 18px;
-            text-align: left;       
-        }
-        .enviar-dos {
-            margin: 3% 5%;
-            a {
-                margin: 4%;
-                padding: 2%;
-                color: white;
-                font-size: 1.1rem;
-                
+            .titulo-promocion {           
+                h3 {
+                    font-size: 43px;
+                    padding-left: 5%;
+                }      
             }
         }
-        .encabezado-curador {
-            .titulo-curador {
-                font-size: 22px;
-                margin: 2% 0% 1% 0%;     
-            }
-            img {
-                width: 45%;
-            }
-        }
-        .texto-curador {
-            margin-top: 15px;
-            font-size: 18px;
-        }       
-    }
-    .main-playlist {
-        h3{
-            font-size:40px;
-            padding: 4% 3% 2% 3%;    
-        }
-        
-        .texto-playlists {   
+        .texto-promocion {      
+            font-size: 20px;
+            text-align: left; 
             p {
-                font-size: 18px;
-                padding-right: 8%;
-                padding-left: 3%;       
-            } 
+                margin-left: 20px;
+            }     
         }
-         
-        .indice-playlist { 
-            ul {
-                li { 
-                    .boton-verde {
-                        @include boton-redondeado;
-                        font-size: 25px;   
-                    }
-                }
-            }
-        }
-                    
     }
 
+    .main-tutorias {
+        .encabezado-curador {
+            .titulo-curador { 
+                h3 {
+                    font-size: 60px;
+                }      
+            }
+        }
+        .texto-curador {  
+            font-size: 23px;
+        }
+    }       
+   
     .pages-playlists {
         .titulo-playlists {
             a {
@@ -601,8 +533,7 @@
             align-items:baseline;
             h3 {
                 margin-left: 1.5%;
-                font-weight: 300;
-                font-size: 23px;
+                font-size: 31px;
             }
             .segui {
                 display: flex;
@@ -630,7 +561,7 @@
             flex-direction: column;
             margin: 5% 0%;
             iframe {
-                height: 400px;
+                height: 250px;
                 width: 80%;
                 border-radius: 0px;
             } 
@@ -649,11 +580,24 @@
         }
     }
         
-    .main-contacto {
-        h3 {
-            font-size: 25px;
-        }
-    }  
+    .main-contacto { 
+        .caja-contacto {
+            width: 80%;
+            h3 {
+                font-size: 40Px;
+            }
+            form {
+                div {
+                    label {
+                        font-size: 20px;
+                    }
+                }
+                label {
+                    font-size: 20px;
+                }
+            } 
+        }    
+    }
             
     footer {
         padding-bottom: 5px;
@@ -686,47 +630,36 @@
     
     
     
-    /*############## SMARTPHONE 480 ####################*/
-@media (max-width: 480px) {
+    /*############## SMARTPHONE 381 / 575 ####################*/
+@media (min-width: 381px) and (max-width: 575px) {
         
     header {
         nav {
             .contenedor-nav {
                 .encabezado {
-                    display: flex;
-                    align-items: center;
                     .enlace-logo {
                         display: flex;
                         align-items: baseline;
                         img {
-                            width:60px;
-                            height:60px;
-                            border-radius: 50%;
-                            margin-bottom: 5px;
+                            width:50px;
+                            height:50px;
                         }
                     }
                     .titulos {
-                        display: flex;
-                        flex-direction: column;
+                        
                         h1 {
                             margin-bottom: 4px !important;
-                            font-weight: 400;
-                            color: beige;
-                            font-size: 25px;
+                            font-size: 23px;
                         }
                         .subtitulo {
-                            display: flex;
-                            align-items: center;
                             h2 {
-                                color: rgb(223, 219, 219);
-                                font-weight: 300;
-                                font-size: 17px;  
+                                font-size: 15px;  
                             }
                             .logo-spotify {
                                 width: 15px; 
                                 height: 15px;
                                 margin-left: 4px;
-                                margin-bottom: 7px;                                
+                                margin-bottom: 8px;                                
                             }
                         }
                     }
@@ -735,94 +668,53 @@
                     border: 0px !important;
                     svg {
                         color: aliceblue;
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                     }    
                 }
                 #menu {
                     ul {
                         li {
                             .nav-link {
-                                font-weight: 300;
                                 font-size: 17px;
-                                margin: 0px !important;
-                                color: rgb(216, 213, 213) !important;
-                                transition: all 0.5s ease;
-                                &:hover {
-                                    color:rgb(250, 137, 95) !important; 
-                                }
+                                margin: 0px !important;                               
                             }   
                         }
-                        .servicios-menu {
-                            .servicios-desplegable {
-                                border-left: solid 1px;
-                                border-right: solid 1px;
-                                border-radius: 0px;  
-                                background-image: linear-gradient(to top, rgb(6, 6, 83), black 60%);
-                                .servicios-item {
-                                    color: rgb(157, 252, 220); 
-                                    font-size: 23px;
-                                    text-align: center;
-                                    border-radius: 60px;
-                                }   
-                            }
-                        }
                     }
-                    .redes-menu {
-                        margin-top: 15px;                       
-                        display: flex;
-                        list-style-type: none;
+                    .redes-menu {                     
                         li {
                             a {
                                 .logo-redes-menu {
-                                    width: 20px;
-                                    height: 20px;
-                                    margin: 2px 3px;
+                                    width: 23px;
+                                    height: 23px;
+                                    margin: 4px 6px;
                                 }
                             }
                         }
                     }
                 }   
                 .dropdown-item {
-                    color: rgb(157, 252, 220); 
-                    font-size: 23px;
-                    text-align: center;
-                    border-radius: 60px;                   
-                }   
-                .dropdown-menu {
-                    border-left: solid 1px;
-                    border-right: solid 1px;
-                    border-radius: 0px;  
-                    background-image: linear-gradient(to top, rgb(6, 6, 83), black 60%);
-                }              
+                    font-size: 20px;
+                    text-align: left;            
+                }             
             }
         }
         .boton-sh {
-            display: flex;
-            justify-content: center;
+            .boton-enviar {          
+                color: rgb(218, 216, 216);
+                font-size: 25px;
+            }
         }
     
-        .boton-sh a {
-            
-            text-align: center;
-            width: 100%;
-            height: auto;
-            padding: 15px 10px 20px 10px;
-            text-decoration: none;
-            color: rgb(204, 202, 202);
-            font-size: 30px;
-            transition: all 0.5s ease;   
-        }
-        .boton-sh a:hover {
-            color: rgb(252, 250, 250);
-        }
+        
+        
     }
 
     
     .main-inicio {
         .caja-texto-inicio {
             .texto-inicio {
-                font-size: 30px;
+                font-size: 33px;
                 padding: 40px 5%;
                 margin: 0px 4%;
             }
@@ -831,14 +723,14 @@
             padding-top: 20px;
             padding-bottom: 20px;
             h3 {
-                font-size: 30px;
+                font-size: 28px;
                 margin-top: 20px;
-                margin-left: 40px;
+                margin-left: 20px;
                 margin-bottom: 20px;
                 margin-right: 40px;  
             }       
             p {
-                padding-left: 40px;
+                padding-left: 20px;
                 padding-right: 40px;           
                 font-size: 18px;
             } 
@@ -857,116 +749,85 @@
             .caja-canciones {
                 padding: 0px 20px;    
                 iframe {
-                    margin: 10px 10px;
+                    margin: 10px 5px;
                     width: 80px;
                     height: 80px;
+                    border-radius: 50%;
+                    border: solid 1px;
                 }   
             }
         }      
     }
 
     .main-nosotros {
-        padding: 10% 0% 3% 0%;
+        padding: 5% 0% 5% 0%;
         h3 {
-            margin-left: 30px;
-            font-size: 40px;
+            margin-left: 20px;
+            font-size: 45px;
             margin-bottom: 2%;
         } 
         .texto-nosotros {
             font-size: 18px;
-            margin-left: 30px;
-            margin-right: 10%;
+            margin-left: 20px;
         }
     }
-    .main-servicios {
+    .main-promocion {
         .encabezado-promocion {
-            .titulo-promocion {
-                font-size: 17px;
-                margin-bottom: 2%;     
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .titulo-promocion {           
+                h3 {
+                    font-size: 40px;
+                    padding-left: 5%;
+                }
             }
             img {
-                width: 45%;
-            }
-        }
-        .texto-promocion { 
-            margin-top: 15px;   
-            
-            p {
-                @include parrafos-principales;
-                font-size: 18px;
-
+                width: 90%;
+                margin-right: 0px;
             }      
         }
-        .enviar-dos {
-            margin: 3% 5%;
-            a {
-                margin: 4%;
-                padding: 2%;
-                color: white;
-                font-size: 1.1rem;
-                
-            }
+        .texto-promocion {      
+            font-size: 20px;
+            text-align: left; 
+            p {
+                margin-left: 15px;
+            }     
         }
+    }
+
+    .main-tutorias {
         .encabezado-curador {
-            .titulo-curador {
-                font-size: 17px;
-                margin: 2% 0% 1% 0%;     
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .titulo-curador { 
+                h3 {
+                    font-size: 50px;
+                }      
             }
             img {
-                width: 45%;
-            }
+                width: 90%;
+                margin-right: 0px;
+            }    
         }
-        .texto-curador {
-            margin-top: 15px;           
+        .texto-curador {  
+            font-size: 20px;
             p {
-                @include parrafos-principales;
-                font-size: 18px;
-            }
-        }       
-    }
-    .main-playlist {
-        h3 {
-            font-size:30px;
-            padding: 4% 3% 2% 3%;   
-        }
-        
-        .texto-playlists {   
-            p {
-                @include parrafos-principales;
-                font-size: 18px;
-                padding-left: 3%;       
-            } 
-        }
-         
-        .indice-playlist { 
-            padding: 7% 1%;
-            ul {
-                li { 
-                    .boton-verde {
-                        @include boton-redondeado;
-                        font-size: 20px;   
-                    }
-                }
+                margin-left: 15px;
             }
         }
-                    
-    }
-    
+    }       
+   
     .pages-playlists {
+        padding-top: 100px;
         .titulo-playlists {
-            a {
-                img {
-                    width: 15px;
-                }
-            }
-            
             margin-bottom: 10px;
             padding-left: 10px;
             display: flex;
-            justify-content: start;
+            justify-content: center;
             align-items:baseline;
             h3 {
-                margin-left: 1.5%;
                 font-weight: 400;
                 font-size: 22px;
             }
@@ -995,21 +856,22 @@
             flex-direction: column;
             margin: 2% 0%;
             iframe {
-                               
-                height: 350px;
-                width: 80%;
-                border-radius: 2px;
+                margin-bottom: 50px;             
+                height: 180px;
+                width: 90%;
+                border-radius:5px;
                 
             } 
             .indice-playlist2 {
-                margin-left: 0%;
                 padding-top: 15px;
                 margin-top: 15px;      
                 ul {
                     li {
+                        margin-top: 20px;
                         a { 
                         @include boton-redondeado;
                         font-size: 20px; 
+                        border:solid 0.5px;
                         }  
                     }
                 }
@@ -1017,10 +879,23 @@
         }
     }
 
-    .main-contacto {
-        h3 {
-            font-size: 25Px;
-        }
+    .main-contacto { 
+        .caja-contacto {
+            width: 90%;
+            h3 {
+                font-size: 40Px;
+            }
+            form {
+                div {
+                    label {
+                        font-size: 20px;
+                    }
+                }
+                label {
+                    font-size: 20px;
+                }
+            } 
+        }    
     }
 
     footer {
@@ -1042,4 +917,307 @@
             }
         }
     }   
-}    
+} 
+
+
+
+
+
+
+
+
+//##############################################################
+@media (max-width: 380px) {
+    header {
+        nav {
+            .contenedor-nav {
+                .encabezado {
+                    .enlace-logo {
+                        img {
+                            width:40px;
+                            height:40px;
+                        }
+                    }
+                    .titulos {
+                        
+                        h1 {
+                            margin-bottom: 4px !important;
+                            font-size: 20px;
+                        }
+                        .subtitulo {
+                            h2 {
+                                font-size: 14px;  
+                            }
+                            .logo-spotify {
+                                width: 13px; 
+                                height: 13px;
+                                margin-left: 4px;
+                                margin-bottom: 6px;                                
+                            }
+                        }
+                    }
+                }
+                button {
+                    border: 0px !important;
+                    svg {
+                        color: aliceblue;
+                        width: 35px;
+                        height: 35px;
+                    }    
+                }
+                #menu {
+                    ul {
+                        li {
+                            .nav-link {
+                                font-size: 17px;
+                                margin: 0px !important;                               
+                            }   
+                        }
+                    }
+                    .redes-menu {                     
+                        li {
+                            a {
+                                .logo-redes-menu {
+                                    width: 23px;
+                                    height: 23px;
+                                    margin: 4px 6px;
+                                }
+                            }
+                        }
+                    }
+                }   
+                .dropdown-item {
+                    font-size: 18px;
+                    text-align: left;            
+                }             
+            }
+        }
+        .boton-sh {
+            .boton-enviar {          
+                font-size: 20px;
+            }
+        }
+    
+        
+        
+    }
+
+    
+    .main-inicio {
+        .caja-texto-inicio {
+            .texto-inicio {
+                font-size: 31px;
+                padding: 40px 4%;
+                margin: 0px 3%;
+            }
+        }      
+        .texto-playlists {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            h3 {
+                font-size: 30px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                margin-right: 40px;  
+            }       
+            p {
+                padding-left: 20px;
+                padding-right: 40px;           
+                font-size: 17px;
+            } 
+        }
+    
+        .seccion-canciones { 
+            .texto-canciones {
+                margin: 40px;
+                p {
+                    text-align: center;
+                    font-size:31px;
+                    font-weight: 600;
+                    margin: 0px 5px;           
+                }
+            }
+            .caja-canciones {
+                padding: 0px 20px;    
+                iframe {
+                    margin: 10px 3px;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: solid 1px;
+                }   
+            }
+        }      
+    }
+
+    .main-nosotros {
+        padding: 5% 0% 5% 0%;
+        h3 {
+            margin-left: 15px;
+            font-size: 40px;
+            margin-bottom: 2%;
+        } 
+        .texto-nosotros {
+            font-size: 17px;
+            margin-left: 15px;
+        }
+    }
+    .main-promocion {
+        .encabezado-promocion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .titulo-promocion {           
+                h3 {
+                    font-size: 35px;
+                    padding-left: 5%;
+                }
+            }
+            img {
+                width: 90%;
+                margin-right: 0px;
+            }      
+        }
+        .texto-promocion {      
+            font-size: 17px;
+            text-align: left; 
+            p {
+                margin-left: 15px;
+            }
+            .enviar-dos {
+                a {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    &:hover {
+                        font-size: 1.2rem;                     
+                    } 
+                }
+            }      
+        }
+    }
+
+    .main-tutorias {
+        .encabezado-curador {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .titulo-curador { 
+                h3 {
+                    font-size: 40px;
+                }      
+            }
+            img {
+                width: 90%;
+                margin-right: 0px;
+            }    
+        }
+        .texto-curador {  
+            font-size: 17px;
+            p {
+                margin-left: 15px;
+            }
+        }
+    }       
+   
+    .pages-playlists {
+        padding-top: 80px;
+        .titulo-playlists {
+            a {
+                img {
+                    width: 15px;
+                }
+            } 
+            margin-bottom: 10px;
+            padding-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items:baseline;
+            h3 {
+                font-weight: 400;
+                font-size: 22px;
+            }
+            .segui {
+                display: flex;
+                p {
+                    font-size: 10px;
+                    font-weight: 300;
+                    margin-left: 10px;
+                    color: rgb(134, 247, 134);
+                }
+                a {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-left: 3px;
+                    padding-bottom: 17px;
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }          
+        }
+        .caja-playlist {
+            flex-direction: column;
+            margin: 2% 0%;
+            iframe {
+                margin-bottom: 40px;             
+                height: 180px;
+                width: 90%;
+                border-radius:5px;
+                
+            } 
+            .indice-playlist2 {
+                padding-top: 15px;
+                margin-top: 15px;      
+                ul {
+                    li {
+                        margin-top: 20px;
+                        a { 
+                        @include boton-redondeado;
+                        font-size: 17px; 
+                        border:solid 0.5px;
+                        }  
+                    }
+                }
+            }   
+        }
+    }
+
+    .main-contacto { 
+        .caja-contacto {
+            width: 90%;
+            form {
+                div {
+                    label {
+                        font-size: 18px;
+                    }
+                }
+                label {
+                    font-size: 18px;
+                }
+            } 
+        }    
+    }
+
+    footer {
+        padding-bottom: 5px;
+        .volver-arriba {
+            a {
+                img {
+                    width: 15px;
+                }      
+            }
+        }
+        .navegador-footer {
+            margin-top: 0px;
+            span {
+                a {
+                    font-size: 13px;
+                    padding: 0px 7px;
+                }   
+            }
+        }
+    }   
+}

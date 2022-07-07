@@ -106,26 +106,28 @@ header {
         }
     }
     .boton-sh {
-        background-image: linear-gradient(to bottom, rgb(240, 78, 20) , rgb(70, 22, 5) 85%);
+        background-image: linear-gradient(to top, rgb(240, 78, 20) , rgb(70, 22, 5) 85%);
         display: flex;
         justify-content: center;
+        .boton-enviar {       
+            text-align: center;
+            width: 100%;
+            height: auto;
+            padding: 15px 10px 20px 10px;
+            text-decoration: none;
+            color: rgb(231, 227, 227);
+            font-size: 35px;
+            transition: all 0.5s ease;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            &:hover {
+                background-image: linear-gradient(to top, rgb(240, 78, 20) , rgb(70, 22, 5) 95%);
+                color: rgb(252, 250, 250);
+            }
+        }
     }
 
-    .boton-sh a {       
-        text-align: center;
-        width: 100%;
-        height: auto;
-        padding: 15px 10px 20px 10px;
-        text-decoration: none;
-        color: rgb(231, 227, 227);
-        font-size: 40px;
-        transition: all 0.5s ease;
-        text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    }
-    .boton-sh a:hover {
-        background-image: linear-gradient(to bottom, rgb(240, 78, 20) , rgb(70, 22, 5) 95%);
-        color: rgb(252, 250, 250);
-    }
+   
+    
 }
 
 

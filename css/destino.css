@@ -102,62 +102,52 @@ header nav .contenedor-nav .dropdown-menu {
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(10, 10, 10) 90%);
 }
 header .boton-sh {
-  background-image: linear-gradient(to bottom, rgb(240, 78, 20), rgb(70, 22, 5) 85%);
+  background-image: linear-gradient(to top, rgb(240, 78, 20), rgb(70, 22, 5) 85%);
   display: flex;
   justify-content: center;
 }
-header .boton-sh a {
+header .boton-sh .boton-enviar {
   text-align: center;
   width: 100%;
   height: auto;
   padding: 15px 10px 20px 10px;
   text-decoration: none;
   color: rgb(231, 227, 227);
-  font-size: 40px;
+  font-size: 35px;
   transition: all 0.5s ease;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-header .boton-sh a:hover {
-  background-image: linear-gradient(to bottom, rgb(240, 78, 20), rgb(70, 22, 5) 95%);
+header .boton-sh .boton-enviar:hover {
+  background-image: linear-gradient(to top, rgb(240, 78, 20), rgb(70, 22, 5) 95%);
   color: rgb(252, 250, 250);
 }
 
 footer {
-  height: 140px;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+footer .volver-arriba a svg {
+  width: 30px;
+  height: 30px;
 }
 footer .redes-footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+footer .redes-footer p {
+  font-size: 20px;
+  margin: 0;
+  padding-right: 5px;
 }
 footer .redes-footer a img {
-  width: 24px;
+  width: 20px;
   margin: 0px 5px;
-}
-footer .navegador-footer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-footer .navegador-footer span a {
-  color: rgb(224, 224, 224);
-  font-weight: 100;
-  font-size: 15px;
-  border-left: 1px solid rgb(224, 224, 224);
-  padding: 3px 15px;
-  transition: all 0.5s ease;
-}
-footer .navegador-footer span a:hover {
-  color: rgb(136, 250, 136);
-  border-left: 1px solid rgb(136, 250, 136);
 }
 
 .main-inicio {
@@ -165,6 +155,7 @@ footer .navegador-footer span a:hover {
   flex-direction: column;
 }
 .main-inicio .caja-texto-inicio {
+  height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -172,13 +163,13 @@ footer .navegador-footer span a:hover {
   background-attachment: fixed;
 }
 .main-inicio .caja-texto-inicio .texto-inicio {
-  font-size: 63px;
+  font-size: 61px;
   font-weight: 600;
   text-align: center;
   padding: 40px 10%;
-  margin: 0px 8%;
+  margin: 0px 5%;
   color: rgb(226, 224, 224);
-  text-shadow: 2px 2px 2px rgb(19, 19, 19);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 .main-inicio .texto-playlists {
   background-image: linear-gradient(to top left, rgb(6, 6, 83), rgb(1, 1, 19) 60%);
@@ -189,7 +180,7 @@ footer .navegador-footer span a:hover {
   background-image: linear-gradient(to bottom right, rgb(6, 6, 83), rgb(1, 1, 19) 60%);
 }
 .main-inicio .texto-playlists h3 {
-  text-shadow: 1px 1px 1px rgb(19, 19, 19);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-size: 60px;
   font-weight: 600;
   margin-top: 40px;
@@ -203,7 +194,7 @@ footer .navegador-footer span a:hover {
   padding-right: 40px;
   font-weight: 300;
   font-size: 30px;
-  text-shadow: 1px 1px 1px rgb(19, 19, 19);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 .main-inicio .seccion-canciones {
   background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
@@ -243,12 +234,13 @@ footer .navegador-footer span a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 3% 0%;
+  padding: 2% 0%;
 }
 .main-nosotros h3 {
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 600;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
   margin-left: 40px;
   text-shadow: 2px 2px 2px rgb(19, 19, 19);
   color: rgb(209, 207, 207);
@@ -256,6 +248,7 @@ footer .navegador-footer span a:hover {
 .main-nosotros .texto-nosotros {
   text-align: left;
   font-size: 30px;
+  margin-top: 30px;
   margin-left: 40px;
   margin-right: 10%;
 }
@@ -278,8 +271,8 @@ footer .navegador-footer span a:hover {
 .pages-playlists .titulo-playlists h3 {
   margin-left: 2%;
   font-weight: 500;
-  font-size: 60px;
-  text-shadow: 2px 2px 2px rgb(19, 19, 19);
+  font-size: 75px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 .pages-playlists .titulo-playlists .segui {
   display: flex;
@@ -311,6 +304,9 @@ footer .navegador-footer span a:hover {
   height: 370px;
   width: 1800px;
   border-radius: 5px;
+  box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.38);
 }
 .pages-playlists .caja-playlist .indice-playlist2 {
   margin-left: 1%;
@@ -334,7 +330,7 @@ footer .navegador-footer span a:hover {
   border-style: solid;
   border-width: 1Px;
   transition: all 0.5s ease;
-  text-shadow: 1px 1px 1px rgb(8, 8, 8);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-size: 30px;
 }
 .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
@@ -353,11 +349,7 @@ footer .navegador-footer span a:hover {
 .main-contacto .caja-contacto {
   width: 60%;
   padding-bottom: 50px;
-}
-.main-contacto .caja-contacto h3 {
-  font-size: 60Px;
   padding-top: 50px;
-  padding-bottom: 30px;
 }
 .main-contacto .caja-contacto form div label {
   font-size: 30px;
@@ -416,7 +408,7 @@ footer .navegador-footer span a:hover {
   margin-left: 30px;
   margin-right: 8%;
   color: rgb(233, 230, 230);
-  text-shadow: 2px 2px 2px rgb(19, 19, 19);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 .main-promocion .texto-promocion .enviar-dos {
   margin: 0% 2%;
@@ -430,14 +422,14 @@ footer .navegador-footer span a:hover {
   padding: 2%;
   color: white;
   font-size: 1.3rem;
-  background-color: orangered;
+  background-image: linear-gradient(to bottom, rgb(240, 78, 20), rgb(70, 22, 5) 85%);
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 .main-promocion .texto-promocion .enviar-dos a:hover {
   font-size: 1.3rem;
   color: white;
-  background-color: #673ab7;
+  background-image: linear-gradient(to bottom, rgb(240, 78, 20), rgb(70, 22, 5) 95%);
 }
 
 .main-tutorias {
@@ -458,7 +450,7 @@ footer .navegador-footer span a:hover {
   font-weight: 600;
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 80px;
+  font-size: 120px;
 }
 .main-tutorias .encabezado-curador img {
   width: 48%;
@@ -480,7 +472,7 @@ footer .navegador-footer span a:hover {
   margin-left: 30px;
   margin-right: 8%;
   color: rgb(233, 230, 230);
-  text-shadow: 2px 2px 2px rgb(19, 19, 19);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .restaurant {
@@ -492,7 +484,7 @@ footer .navegador-footer span a:hover {
 }
 
 .surf-vibes {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/T15hzc4t/Design-sem-nome-10.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.493)), url(https://i.postimg.cc/T15hzc4t/Design-sem-nome-10.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -500,7 +492,7 @@ footer .navegador-footer span a:hover {
 }
 
 .indie-summer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/HkH5KG3h/pexels-igor-starkov-769158.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.507)), url(https://i.postimg.cc/HkH5KG3h/pexels-igor-starkov-769158.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -524,7 +516,7 @@ footer .navegador-footer span a:hover {
 }
 
 .edm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(https://i.postimg.cc/B6NxGjd8/two-young-women-playing-and-enjoying-with-holi-colors.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.493)), url(https://i.postimg.cc/B6NxGjd8/two-young-women-playing-and-enjoying-with-holi-colors.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -590,7 +582,7 @@ footer .navegador-footer span a:hover {
 /*############ DESKTOP 993 / 1245 ###############*/
 @media (min-width: 993px) and (max-width: 1245px) {
   .main-inicio .caja-texto-inicio .texto-inicio {
-    font-size: 50px;
+    font-size: 52px;
     padding: 40px 10%;
     margin: 0px 5%;
   }
@@ -614,58 +606,27 @@ footer .navegador-footer span a:hover {
     font-weight: 600;
     margin: 0px 30px;
   }
-  .main-nosotros {
-    padding: 3% 0%;
-  }
   .main-nosotros h3 {
-    font-size: 70px;
+    font-size: 80px;
     margin-bottom: 2%;
   }
   .main-nosotros .texto-nosotros {
     font-size: 25px;
-    margin-left: 40px;
-    margin-right: 10%;
   }
-  .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 55px !important;
-    margin-bottom: 2%;
+  .main-promocion .encabezado-promocion .titulo-promocion h3 {
+    font-size: 70px;
+    padding-left: 5%;
   }
-  .main-servicios .texto-promocion {
-    font-size: 20px;
+  .main-promocion .texto-promocion {
+    font-size: 25px;
     text-align: left;
   }
-  .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 45px;
-    margin: 2% 0% 1% 0%;
+  .main-tutorias .encabezado-curador .titulo-curador h3 {
+    font-size: 105px;
   }
-  .main-servicios .texto-curador {
+  .main-tutorias .texto-curador {
     margin-top: 20px;
-    font-size: 20px;
-  }
-  .main-playlist h3 {
-    font-size: 50px;
-  }
-  .main-playlist .texto-playlists p {
-    font-size: 20px;
-    padding-right: 8%;
-    padding-left: 2%;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde {
-    color: white;
-    font-size: 32px;
-    font-weight: 400;
-    border-radius: 60px;
-    padding: 5px 15px;
-    border-style: solid;
-    border-width: 1Px;
-    transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
-    font-size: 28px;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde:hover {
-    background-color: rgb(23, 139, 23);
-    border-color: white;
-    text-shadow: 2px 2px 2px black;
+    font-size: 25px;
   }
   .pages-playlists .titulo-playlists {
     margin-top: 20px;
@@ -676,8 +637,7 @@ footer .navegador-footer span a:hover {
   }
   .pages-playlists .titulo-playlists h3 {
     margin-left: 2%;
-    font-weight: 300;
-    font-size: 50px;
+    font-size: 60px;
   }
   .pages-playlists .titulo-playlists .segui {
     display: flex;
@@ -711,7 +671,7 @@ footer .navegador-footer span a:hover {
     border-style: solid;
     border-width: 1Px;
     transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 23px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
@@ -755,7 +715,7 @@ footer .navegador-footer span a:hover {
     font-size: 35px;
   }
   .main-inicio .caja-texto-inicio .texto-inicio {
-    font-size: 45px;
+    font-size: 48px;
     padding: 40px 8%;
     margin: 0px 5%;
   }
@@ -776,67 +736,33 @@ footer .navegador-footer span a:hover {
   }
   .main-inicio .seccion-canciones .texto-canciones p {
     font-size: 45px;
-    font-weight: 600;
     margin: 0px 30px;
   }
   .main-nosotros {
-    padding: 3% 0%;
+    padding: 2% 0%;
   }
   .main-nosotros h3 {
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 2%;
   }
   .main-nosotros .texto-nosotros {
     font-size: 23px;
-    margin-left: 40px;
-    margin-right: 10%;
   }
-  .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 35px;
-    margin-bottom: 2%;
+  .main-promocion .encabezado-promocion .titulo-promocion h3 {
+    font-size: 60px;
+    padding-left: 5%;
   }
-  .main-servicios .texto-promocion {
-    font-size: 17px;
+  .main-promocion .texto-promocion {
+    font-size: 23px;
     text-align: left;
   }
-  .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 35px;
-    margin: 2% 0% 1% 0%;
+  .main-tutorias .encabezado-curador .titulo-curador h3 {
+    font-size: 82px;
   }
-  .main-servicios .texto-curador {
-    margin-top: 20px;
-    font-size: 17px;
-  }
-  .main-contacto h3 {
-    font-size: 30px;
-  }
-  .main-playlist h3 {
-    font-size: 40px;
-  }
-  .main-playlist .texto-playlists p {
-    font-size: 17px;
-    padding-right: 8%;
-    padding-left: 2%;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde {
-    color: white;
-    font-size: 32px;
-    font-weight: 400;
-    border-radius: 60px;
-    padding: 5px 15px;
-    border-style: solid;
-    border-width: 1Px;
-    transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
-    font-size: 28px;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde:hover {
-    background-color: rgb(23, 139, 23);
-    border-color: white;
-    text-shadow: 2px 2px 2px black;
+  .main-tutorias .texto-curador {
+    font-size: 23px;
   }
   .pages-playlists .titulo-playlists {
-    margin-top: 20px;
     padding-left: 20px;
     display: flex;
     justify-content: start;
@@ -844,8 +770,7 @@ footer .navegador-footer span a:hover {
   }
   .pages-playlists .titulo-playlists h3 {
     margin-left: 1.5%;
-    font-weight: 300;
-    font-size: 40px;
+    font-size: 43px;
   }
   .pages-playlists .titulo-playlists .segui {
     display: flex;
@@ -879,7 +804,7 @@ footer .navegador-footer span a:hover {
     border-style: solid;
     border-width: 1Px;
     transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 20px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
@@ -887,12 +812,24 @@ footer .navegador-footer span a:hover {
     border-color: white;
     text-shadow: 2px 2px 2px black;
   }
+  .main-contacto .caja-contacto {
+    width: 80%;
+  }
+  .main-contacto .caja-contacto h3 {
+    font-size: 40Px;
+  }
+  .main-contacto .caja-contacto form div label {
+    font-size: 25px;
+  }
+  .main-contacto .caja-contacto form label {
+    font-size: 25px;
+  }
   footer .volver-arriba a img {
     width: 20px;
   }
 }
-/*####################### TABLET 481 / 767 #######################*/
-@media (min-width: 481px) and (max-width: 767px) {
+/*####################### TABLET 576 / 767 #######################*/
+@media (min-width: 576px) and (max-width: 767px) {
   header nav .contenedor-nav .encabezado .titulos h1 {
     margin-bottom: 6px !important;
     font-size: 25px;
@@ -920,12 +857,12 @@ footer .navegador-footer span a:hover {
     text-align: left;
     border-radius: 60px;
   }
-  header .boton-sh a {
-    font-size: 35px;
+  header .boton-sh .boton-enviar {
+    font-size: 27px;
   }
   .main-inicio .caja-texto-inicio .texto-inicio {
-    font-size: 35px;
-    padding: 40px 8%;
+    font-size: 40px;
+    padding: 30px 8%;
     margin: 0px 5%;
   }
   .main-inicio .texto-playlists h3 {
@@ -958,75 +895,33 @@ footer .navegador-footer span a:hover {
     height: 80px;
   }
   .main-nosotros {
-    padding: 8% 0% 4% 0%;
+    padding: 3% 0% 4% 0%;
   }
   .main-nosotros h3 {
     font-size: 50px;
-    margin-bottom: 2%;
-    margin-left: 30px;
+    margin-bottom: 3%;
+    margin-left: 20px;
   }
   .main-nosotros .texto-nosotros {
     font-size: 21px;
-    margin-left: 30px;
-    margin-right: 10%;
+    margin-left: 20px;
   }
-  .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 22px;
-    margin-bottom: 2%;
+  .main-promocion .encabezado-promocion .titulo-promocion h3 {
+    font-size: 43px;
+    padding-left: 5%;
   }
-  .main-servicios .encabezado-promocion img {
-    width: 45%;
-  }
-  .main-servicios .texto-promocion {
-    margin-top: 15px;
-    font-size: 18px;
+  .main-promocion .texto-promocion {
+    font-size: 20px;
     text-align: left;
   }
-  .main-servicios .enviar-dos {
-    margin: 3% 5%;
+  .main-promocion .texto-promocion p {
+    margin-left: 20px;
   }
-  .main-servicios .enviar-dos a {
-    margin: 4%;
-    padding: 2%;
-    color: white;
-    font-size: 1.1rem;
+  .main-tutorias .encabezado-curador .titulo-curador h3 {
+    font-size: 60px;
   }
-  .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 22px;
-    margin: 2% 0% 1% 0%;
-  }
-  .main-servicios .encabezado-curador img {
-    width: 45%;
-  }
-  .main-servicios .texto-curador {
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  .main-playlist h3 {
-    font-size: 40px;
-    padding: 4% 3% 2% 3%;
-  }
-  .main-playlist .texto-playlists p {
-    font-size: 18px;
-    padding-right: 8%;
-    padding-left: 3%;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde {
-    color: white;
-    font-size: 32px;
-    font-weight: 400;
-    border-radius: 60px;
-    padding: 5px 15px;
-    border-style: solid;
-    border-width: 1Px;
-    transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
-    font-size: 25px;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde:hover {
-    background-color: rgb(23, 139, 23);
-    border-color: white;
-    text-shadow: 2px 2px 2px black;
+  .main-tutorias .texto-curador {
+    font-size: 23px;
   }
   .pages-playlists .titulo-playlists {
     margin-top: 20px;
@@ -1040,8 +935,7 @@ footer .navegador-footer span a:hover {
   }
   .pages-playlists .titulo-playlists h3 {
     margin-left: 1.5%;
-    font-weight: 300;
-    font-size: 23px;
+    font-size: 31px;
   }
   .pages-playlists .titulo-playlists .segui {
     display: flex;
@@ -1068,7 +962,7 @@ footer .navegador-footer span a:hover {
     margin: 5% 0%;
   }
   .pages-playlists .caja-playlist iframe {
-    height: 400px;
+    height: 250px;
     width: 80%;
     border-radius: 0px;
   }
@@ -1085,7 +979,7 @@ footer .navegador-footer span a:hover {
     border-style: solid;
     border-width: 1Px;
     transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 22px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
@@ -1093,8 +987,17 @@ footer .navegador-footer span a:hover {
     border-color: white;
     text-shadow: 2px 2px 2px black;
   }
-  .main-contacto h3 {
-    font-size: 25px;
+  .main-contacto .caja-contacto {
+    width: 80%;
+  }
+  .main-contacto .caja-contacto h3 {
+    font-size: 40Px;
+  }
+  .main-contacto .caja-contacto form div label {
+    font-size: 20px;
+  }
+  .main-contacto .caja-contacto form label {
+    font-size: 20px;
   }
   footer {
     padding-bottom: 5px;
@@ -1107,118 +1010,56 @@ footer .navegador-footer span a:hover {
     padding: 0px 10px;
   }
 }
-/*############## SMARTPHONE 480 ####################*/
-@media (max-width: 480px) {
-  header nav .contenedor-nav .encabezado {
-    display: flex;
-    align-items: center;
-  }
+/*############## SMARTPHONE 381 / 575 ####################*/
+@media (min-width: 381px) and (max-width: 575px) {
   header nav .contenedor-nav .encabezado .enlace-logo {
     display: flex;
     align-items: baseline;
   }
   header nav .contenedor-nav .encabezado .enlace-logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  }
-  header nav .contenedor-nav .encabezado .titulos {
-    display: flex;
-    flex-direction: column;
+    width: 50px;
+    height: 50px;
   }
   header nav .contenedor-nav .encabezado .titulos h1 {
     margin-bottom: 4px !important;
-    font-weight: 400;
-    color: beige;
-    font-size: 25px;
-  }
-  header nav .contenedor-nav .encabezado .titulos .subtitulo {
-    display: flex;
-    align-items: center;
+    font-size: 23px;
   }
   header nav .contenedor-nav .encabezado .titulos .subtitulo h2 {
-    color: rgb(223, 219, 219);
-    font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
   }
   header nav .contenedor-nav .encabezado .titulos .subtitulo .logo-spotify {
     width: 15px;
     height: 15px;
     margin-left: 4px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
   header nav .contenedor-nav button {
     border: 0px !important;
   }
   header nav .contenedor-nav button svg {
     color: aliceblue;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   header nav .contenedor-nav #menu ul li .nav-link {
-    font-weight: 300;
     font-size: 17px;
     margin: 0px !important;
-    color: rgb(216, 213, 213) !important;
-    transition: all 0.5s ease;
-  }
-  header nav .contenedor-nav #menu ul li .nav-link:hover {
-    color: rgb(250, 137, 95) !important;
-  }
-  header nav .contenedor-nav #menu ul .servicios-menu .servicios-desplegable {
-    border-left: solid 1px;
-    border-right: solid 1px;
-    border-radius: 0px;
-    background-image: linear-gradient(to top, rgb(6, 6, 83), black 60%);
-  }
-  header nav .contenedor-nav #menu ul .servicios-menu .servicios-desplegable .servicios-item {
-    color: rgb(157, 252, 220);
-    font-size: 23px;
-    text-align: center;
-    border-radius: 60px;
-  }
-  header nav .contenedor-nav #menu .redes-menu {
-    margin-top: 15px;
-    display: flex;
-    list-style-type: none;
   }
   header nav .contenedor-nav #menu .redes-menu li a .logo-redes-menu {
-    width: 20px;
-    height: 20px;
-    margin: 2px 3px;
+    width: 23px;
+    height: 23px;
+    margin: 4px 6px;
   }
   header nav .contenedor-nav .dropdown-item {
-    color: rgb(157, 252, 220);
-    font-size: 23px;
-    text-align: center;
-    border-radius: 60px;
+    font-size: 20px;
+    text-align: left;
   }
-  header nav .contenedor-nav .dropdown-menu {
-    border-left: solid 1px;
-    border-right: solid 1px;
-    border-radius: 0px;
-    background-image: linear-gradient(to top, rgb(6, 6, 83), black 60%);
-  }
-  header .boton-sh {
-    display: flex;
-    justify-content: center;
-  }
-  header .boton-sh a {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding: 15px 10px 20px 10px;
-    text-decoration: none;
-    color: rgb(204, 202, 202);
-    font-size: 30px;
-    transition: all 0.5s ease;
-  }
-  header .boton-sh a:hover {
-    color: rgb(252, 250, 250);
+  header .boton-sh .boton-enviar {
+    color: rgb(218, 216, 216);
+    font-size: 25px;
   }
   .main-inicio .caja-texto-inicio .texto-inicio {
-    font-size: 30px;
+    font-size: 33px;
     padding: 40px 5%;
     margin: 0px 4%;
   }
@@ -1227,14 +1068,14 @@ footer .navegador-footer span a:hover {
     padding-bottom: 20px;
   }
   .main-inicio .texto-playlists h3 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-bottom: 20px;
     margin-right: 40px;
   }
   .main-inicio .texto-playlists p {
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 40px;
     font-size: 18px;
   }
@@ -1251,116 +1092,73 @@ footer .navegador-footer span a:hover {
     padding: 0px 20px;
   }
   .main-inicio .seccion-canciones .caja-canciones iframe {
-    margin: 10px 10px;
+    margin: 10px 5px;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
+    border: solid 1px;
   }
   .main-nosotros {
-    padding: 10% 0% 3% 0%;
+    padding: 5% 0% 5% 0%;
   }
   .main-nosotros h3 {
-    margin-left: 30px;
-    font-size: 40px;
+    margin-left: 20px;
+    font-size: 45px;
     margin-bottom: 2%;
   }
   .main-nosotros .texto-nosotros {
     font-size: 18px;
-    margin-left: 30px;
-    margin-right: 10%;
+    margin-left: 20px;
   }
-  .main-servicios .encabezado-promocion .titulo-promocion {
-    font-size: 17px;
-    margin-bottom: 2%;
+  .main-promocion .encabezado-promocion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .main-servicios .encabezado-promocion img {
-    width: 45%;
+  .main-promocion .encabezado-promocion .titulo-promocion h3 {
+    font-size: 40px;
+    padding-left: 5%;
   }
-  .main-servicios .texto-promocion {
-    margin-top: 15px;
+  .main-promocion .encabezado-promocion img {
+    width: 90%;
+    margin-right: 0px;
   }
-  .main-servicios .texto-promocion p {
-    font-weight: 300;
+  .main-promocion .texto-promocion {
+    font-size: 20px;
     text-align: left;
-    font-size: 23px;
-    padding-right: 8%;
-    padding-left: 2.5%;
-    color: rgb(207, 197, 197);
-    font-size: 18px;
   }
-  .main-servicios .enviar-dos {
-    margin: 3% 5%;
+  .main-promocion .texto-promocion p {
+    margin-left: 15px;
   }
-  .main-servicios .enviar-dos a {
-    margin: 4%;
-    padding: 2%;
-    color: white;
-    font-size: 1.1rem;
+  .main-tutorias .encabezado-curador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .main-servicios .encabezado-curador .titulo-curador {
-    font-size: 17px;
-    margin: 2% 0% 1% 0%;
+  .main-tutorias .encabezado-curador .titulo-curador h3 {
+    font-size: 50px;
   }
-  .main-servicios .encabezado-curador img {
-    width: 45%;
+  .main-tutorias .encabezado-curador img {
+    width: 90%;
+    margin-right: 0px;
   }
-  .main-servicios .texto-curador {
-    margin-top: 15px;
-  }
-  .main-servicios .texto-curador p {
-    font-weight: 300;
-    text-align: left;
-    font-size: 23px;
-    padding-right: 8%;
-    padding-left: 2.5%;
-    color: rgb(207, 197, 197);
-    font-size: 18px;
-  }
-  .main-playlist h3 {
-    font-size: 30px;
-    padding: 4% 3% 2% 3%;
-  }
-  .main-playlist .texto-playlists p {
-    font-weight: 300;
-    text-align: left;
-    font-size: 23px;
-    padding-right: 8%;
-    padding-left: 2.5%;
-    color: rgb(207, 197, 197);
-    font-size: 18px;
-    padding-left: 3%;
-  }
-  .main-playlist .indice-playlist {
-    padding: 7% 1%;
-  }
-  .main-playlist .indice-playlist ul li .boton-verde {
-    color: white;
-    font-size: 32px;
-    font-weight: 400;
-    border-radius: 60px;
-    padding: 5px 15px;
-    border-style: solid;
-    border-width: 1Px;
-    transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+  .main-tutorias .texto-curador {
     font-size: 20px;
   }
-  .main-playlist .indice-playlist ul li .boton-verde:hover {
-    background-color: rgb(23, 139, 23);
-    border-color: white;
-    text-shadow: 2px 2px 2px black;
+  .main-tutorias .texto-curador p {
+    margin-left: 15px;
+  }
+  .pages-playlists {
+    padding-top: 100px;
   }
   .pages-playlists .titulo-playlists {
     margin-bottom: 10px;
     padding-left: 10px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: baseline;
   }
-  .pages-playlists .titulo-playlists a img {
-    width: 15px;
-  }
   .pages-playlists .titulo-playlists h3 {
-    margin-left: 1.5%;
     font-weight: 400;
     font-size: 22px;
   }
@@ -1389,14 +1187,17 @@ footer .navegador-footer span a:hover {
     margin: 2% 0%;
   }
   .pages-playlists .caja-playlist iframe {
-    height: 350px;
-    width: 80%;
-    border-radius: 2px;
+    margin-bottom: 50px;
+    height: 180px;
+    width: 90%;
+    border-radius: 5px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 {
-    margin-left: 0%;
     padding-top: 15px;
     margin-top: 15px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li {
+    margin-top: 20px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a {
     color: white;
@@ -1407,16 +1208,260 @@ footer .navegador-footer span a:hover {
     border-style: solid;
     border-width: 1Px;
     transition: all 0.5s ease;
-    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 20px;
+    border: solid 0.5px;
   }
   .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
     background-color: rgb(23, 139, 23);
     border-color: white;
     text-shadow: 2px 2px 2px black;
   }
-  .main-contacto h3 {
-    font-size: 25Px;
+  .main-contacto .caja-contacto {
+    width: 90%;
+  }
+  .main-contacto .caja-contacto h3 {
+    font-size: 40Px;
+  }
+  .main-contacto .caja-contacto form div label {
+    font-size: 20px;
+  }
+  .main-contacto .caja-contacto form label {
+    font-size: 20px;
+  }
+  footer {
+    padding-bottom: 5px;
+  }
+  footer .volver-arriba a img {
+    width: 15px;
+  }
+  footer .navegador-footer {
+    margin-top: 0px;
+  }
+  footer .navegador-footer span a {
+    font-size: 13px;
+    padding: 0px 7px;
+  }
+}
+@media (max-width: 380px) {
+  header nav .contenedor-nav .encabezado .enlace-logo img {
+    width: 40px;
+    height: 40px;
+  }
+  header nav .contenedor-nav .encabezado .titulos h1 {
+    margin-bottom: 4px !important;
+    font-size: 20px;
+  }
+  header nav .contenedor-nav .encabezado .titulos .subtitulo h2 {
+    font-size: 14px;
+  }
+  header nav .contenedor-nav .encabezado .titulos .subtitulo .logo-spotify {
+    width: 13px;
+    height: 13px;
+    margin-left: 4px;
+    margin-bottom: 6px;
+  }
+  header nav .contenedor-nav button {
+    border: 0px !important;
+  }
+  header nav .contenedor-nav button svg {
+    color: aliceblue;
+    width: 35px;
+    height: 35px;
+  }
+  header nav .contenedor-nav #menu ul li .nav-link {
+    font-size: 17px;
+    margin: 0px !important;
+  }
+  header nav .contenedor-nav #menu .redes-menu li a .logo-redes-menu {
+    width: 23px;
+    height: 23px;
+    margin: 4px 6px;
+  }
+  header nav .contenedor-nav .dropdown-item {
+    font-size: 18px;
+    text-align: left;
+  }
+  header .boton-sh .boton-enviar {
+    font-size: 20px;
+  }
+  .main-inicio .caja-texto-inicio .texto-inicio {
+    font-size: 31px;
+    padding: 40px 4%;
+    margin: 0px 3%;
+  }
+  .main-inicio .texto-playlists {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main-inicio .texto-playlists h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+  .main-inicio .texto-playlists p {
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 17px;
+  }
+  .main-inicio .seccion-canciones .texto-canciones {
+    margin: 40px;
+  }
+  .main-inicio .seccion-canciones .texto-canciones p {
+    text-align: center;
+    font-size: 31px;
+    font-weight: 600;
+    margin: 0px 5px;
+  }
+  .main-inicio .seccion-canciones .caja-canciones {
+    padding: 0px 20px;
+  }
+  .main-inicio .seccion-canciones .caja-canciones iframe {
+    margin: 10px 3px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 1px;
+  }
+  .main-nosotros {
+    padding: 5% 0% 5% 0%;
+  }
+  .main-nosotros h3 {
+    margin-left: 15px;
+    font-size: 40px;
+    margin-bottom: 2%;
+  }
+  .main-nosotros .texto-nosotros {
+    font-size: 17px;
+    margin-left: 15px;
+  }
+  .main-promocion .encabezado-promocion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-promocion .encabezado-promocion .titulo-promocion h3 {
+    font-size: 35px;
+    padding-left: 5%;
+  }
+  .main-promocion .encabezado-promocion img {
+    width: 90%;
+    margin-right: 0px;
+  }
+  .main-promocion .texto-promocion {
+    font-size: 17px;
+    text-align: left;
+  }
+  .main-promocion .texto-promocion p {
+    margin-left: 15px;
+  }
+  .main-promocion .texto-promocion .enviar-dos a {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .main-promocion .texto-promocion .enviar-dos a:hover {
+    font-size: 1.2rem;
+  }
+  .main-tutorias .encabezado-curador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-tutorias .encabezado-curador .titulo-curador h3 {
+    font-size: 40px;
+  }
+  .main-tutorias .encabezado-curador img {
+    width: 90%;
+    margin-right: 0px;
+  }
+  .main-tutorias .texto-curador {
+    font-size: 17px;
+  }
+  .main-tutorias .texto-curador p {
+    margin-left: 15px;
+  }
+  .pages-playlists {
+    padding-top: 80px;
+  }
+  .pages-playlists .titulo-playlists {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .pages-playlists .titulo-playlists a img {
+    width: 15px;
+  }
+  .pages-playlists .titulo-playlists h3 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .pages-playlists .titulo-playlists .segui {
+    display: flex;
+  }
+  .pages-playlists .titulo-playlists .segui p {
+    font-size: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: rgb(134, 247, 134);
+  }
+  .pages-playlists .titulo-playlists .segui a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3px;
+    padding-bottom: 17px;
+  }
+  .pages-playlists .titulo-playlists .segui a img {
+    width: 10px;
+    height: 10px;
+  }
+  .pages-playlists .caja-playlist {
+    flex-direction: column;
+    margin: 2% 0%;
+  }
+  .pages-playlists .caja-playlist iframe {
+    margin-bottom: 40px;
+    height: 180px;
+    width: 90%;
+    border-radius: 5px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li {
+    margin-top: 20px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 17px;
+    border: solid 0.5px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+  .main-contacto .caja-contacto {
+    width: 90%;
+  }
+  .main-contacto .caja-contacto form div label {
+    font-size: 18px;
+  }
+  .main-contacto .caja-contacto form label {
+    font-size: 18px;
   }
   footer {
     padding-bottom: 5px;
