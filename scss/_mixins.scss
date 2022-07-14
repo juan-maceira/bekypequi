@@ -12,21 +12,5 @@
         background-color: rgb(23, 139, 23);
         border-color: white; 
         text-shadow: 2px 2px 2px black;   
-    }
-               
-}
-
-@mixin parrafos-principales {
-    font-weight: 300;
-    text-align: left;
-    font-size: 23px;
-    padding-right: 8%;
-    padding-left: 2.5%;        
-    color: rgb(207, 197, 197);   
-}
-
-@mixin titulos-principales {
-    font-weight: 300;
-    padding-left: 4%;
-    color: rgb(114, 250, 250);
+    }              
 }

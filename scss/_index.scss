@@ -1,80 +1,32 @@
 .main-inicio {
-    display: flex;
-    flex-direction: column;
-    .caja-texto-inicio {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
-        background-position: center;
-        background-repeat: no-repeat; 
-        background-size: cover;
-        background-attachment: fixed;
-        .texto-inicio {    
-            font-size: 61px;
-            font-weight: 600;
-            text-align: center;
-            padding: 40px 10%;
-            margin: 0px 5%;
-            color: rgb(226, 224, 224);
-            text-shadow: 2px 2px 2px rgb(0, 0, 0);
-        }
-    }
-   
-    .texto-playlists {
-        background-image: linear-gradient(to top left, rgb(6, 6, 83), rgb(1, 1, 19) 60%);
-        padding-bottom: 50px;
-        padding-top: 50px;
-        &:hover {
-            background-image: linear-gradient(to bottom right, rgb(6, 6, 83), rgb(1, 1, 19) 60%);      
-        }
-        h3 {
-            text-shadow: 1px 1px 1px rgb(0, 0, 0);
-            font-size: 60px;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-left: 40px;
-            margin-bottom: 20px;
-            margin-bottom: 20px;
-            color: rgb(155, 248, 217);   
-        }       
-        p {
-            padding-left: 40px; 
-            padding-right: 40px;         
-            font-weight: 300;
-            font-size: 30px;
-            text-shadow: 1px 1px 1px rgb(0, 0, 0);
-        } 
-    }
-
-    .seccion-canciones { 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
-        background-position: center;
-        background-repeat: no-repeat; 
-        background-size: cover;
-        background-attachment: fixed;
-        .texto-canciones {
-            margin: 40px;
-            p {
-                text-align: right;
-                font-size: 65px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/76nhpfNp/pexels-david-yu-1749822.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .caja-texto-inicio {
+            .texto-inicio {    
+                font-size: 60px;
                 font-weight: 600;
-                margin: 0px 30px;
+                text-align: center;
+                padding: 50px 50px 10px 50px;
                 color: rgb(226, 224, 224);
-                text-shadow: 2px 2px 2px rgb(19, 19, 19);            
+                text-shadow: 2px 2px 2px rgb(0, 0, 0);
             }
         }
-        .caja-canciones {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            transition: all 0.3s ease;
-            margin: 40px 40px 60px 40px;
-            iframe {
-                margin: 20px 15px;
-                width: 250px;
-                height: 80px;
-                border-radius: 3px;
-            }   
+        video {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin-bottom: 50px;
+            border: solid 1.5px rgb(30, 137, 30);
         }
-    }
+    }  
 }
 
 

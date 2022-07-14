@@ -1,12 +1,12 @@
 
 .main-tutorias {
     background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/dVFvWgx3/black-wireless-headphones-on-black-surface.jpg);
-        background-position: center;
-        background-repeat: no-repeat; 
-        background-size: cover;
-        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     .encabezado-curador {
-        padding-top: 20px;
+        padding-top: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,13 +14,13 @@
             h3 {
                 color: rgb(233, 229, 229);
                 font-weight: 600;
-                padding-left: 4%;
+                text-shadow: 2px 2px 2px black;
                 padding-right: 4%;
-                font-size: 120px;
+                font-size: 60px;
             }      
         }
         img {
-            width: 48%;
+            width: 35%;
             height: auto;
             margin-right: 20px;
             border: solid 1px;
@@ -31,15 +31,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;       
-        font-size: 30px;
+        font-size: 27px;
         text-align: left;  
         p {
-        margin-top: 10px;
-        font-weight: 300;
-        margin-left: 30px;
-        margin-right: 8%;
-        color: rgb(233, 230, 230);
-        text-shadow: 1px 1px 1px rgb(0, 0, 0);  
+            margin-top: 10px;
+            font-weight: 300;
+            color: rgb(233, 230, 230);
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);  
         }
     }
 }       
