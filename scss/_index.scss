@@ -4,6 +4,7 @@
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 50px;
     .container {
         display: flex;
         flex-direction: column;
@@ -23,7 +24,6 @@
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            margin-bottom: 50px;
             border: solid 1.5px rgb(30, 137, 30);
         }
     }  
